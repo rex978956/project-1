@@ -1,322 +1,339 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@charset "utf-8";
+
+@media only screen and (max-width: 480px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #1e1e1e url(https://image.limeishu.org.tw/images/BG1.jpg);
+        background-size: cover;
+        height: 100vh;
+
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 1px;
+    }
 }
 
-body {
-    background: #1e1e1e url("https://image.limeishu.org.tw/images/BG1.jpg");
-    background-size: cover;
-    height: 100vh;
-    font-family: "Raleway", sans-serif;
-    letter-spacing: 1px;
-}
+@media only screen and (min-width: 769px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-h1 {
-    text-align: center;
-    color: #fff;
-    padding-top: 20px;
-}
+    body {
+        background: #1e1e1e url(https://image.limeishu.org.tw/images/BG1.jpg);
+        background-size: cover;
+        height: 100vh;
 
-ul {
-    list-style: none;
-}
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 1px;
+    }
 
-nav {
-    height: 40px;
-    margin: 40px auto;
-    background-color: rgba(23, 23, 50, 0.7);
-    text-align: center;
-    border-radius: 4px;
-}
+    h1 {
+        text-align: center;
+        color: #fff;
+        padding-top: 20px;
+    }
 
-.main {
-    display: flex;
-    justify-content: center;
-}
+    ul {
+        list-style: none;
+    }
 
-/*
-.main > li {
-	margin: 0 2%;
-}
-*/
+    nav {
+        height: 40px;
+        margin: 40px auto;
+        background-color: rgba(23, 23, 50, 0.7);
+        text-align: center;
+        border-radius: 4px;
+    }
 
-.main > li a {
-    border-left: auto solid rgba(23, 23, 50, 1);
-}
+    .main {
+        display: flex;
+        justify-content: center;
+    }
 
-a {
-    text-decoration: none;
-    color: #ffe;
-    text-transform: capitalize;
-    display: block;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: background-color 0.5s ease-in-out;
-    font-family: "Raleway", sans-serif;
-}
+    .main > li {
+        margin: 0 2%;
+    }
 
-a:hover {
-    background-color: #631818;
-}
+    .main > li a {
+        border-left: 1px solid rgba(23, 23, 50, 1);
+    }
 
-.drop li {
-    /*float:left;*/
-    /*padding: 5px;*/
-    opacity: 0;
-    transform-origin: top center;
-}
+    a {
+        text-decoration: none;
+        color: #ffe;
+        text-transform: capitalize;
+        display: block;
+        padding: 10px 15px;
+        font-size: 16px;
+        transition: background-color 0.5s ease-in-out;
 
-.drop li a {
-    background-color: rgba(80, 80, 80, 0.7);
-    padding: 20px 0;
-}
+        font-family: "Raleway", sans-serif;
+    }
 
-/*.main li:hover {*/
-    /*padding: 3px;*/
-    /*float: left;*/
-/*}*/
+    a:hover {
+        background-color: #631818;
+    }
 
-/*------------- menu1 animation -------------------*/
-
-.main li:hover .menu1 li:first-of-type {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.main li:hover .menu1 li:nth-of-type(2) {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu1 li:nth-of-type(3) {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-
-.main li:hover .menu1 li:nth-of-type(4) {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
-
-.main li:hover .menu1 li:nth-of-type(5) {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 1.5s;
-}
-
-.main li:hover .menu1 li:nth-of-type(6) {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 1.8s;
-}
-
-.main li:hover .menu1 li:last-of-type {
-    animation: menu1 0.3s ease-in-out forwards;
-    animation-delay: 2.1s;
-}
-
-@keyframes menu1 {
-    from {
+    .drop li {
         opacity: 0;
-        transform: translateX(30px) rotateY(90deg);
+        transform-origin: top center;
     }
 
-    to {
-        opacity: 1;
-        transform: translateX(0) rotateY(0);
+    .drop li:hover {
+        background-color: rgba(255, 255, 0, 0.7);
     }
 
-}
-
-/*------------- menu2 animation -------------------*/
-
-.main li:hover .menu2 li:first-of-type {
-    animation: menu2 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.main li:hover .menu2 li:nth-of-type(2) {
-    animation: menu2 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu2 li:nth-of-type(3) {
-    animation: menu2 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-
-.main li:hover .menu2 li:last-of-type {
-    animation: menu2 0.3s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
-
-@keyframes menu2 {
-    0% {
-        opacity: 0;
-        transform: scale(0.7);
+    .drop li a {
+        background-color: rgba(23, 23, 50, 0.7);
+        padding: 10px 0;
     }
 
-    50% {
-        opacity: 0.5;
-        transform: scale(1.1);
+    /*------------- menu1 animation -------------------*/
+
+    .main li:hover .menu1 li:first-of-type {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 0.3s;
     }
 
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/*------------- menu3 animation -------------------*/
-
-.main li:hover .menu3 li:first-of-type {
-    animation: menu3 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.main li:hover .menu3 li:nth-of-type(2) {
-    animation: menu3 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu3 li:nth-of-type(3) {
-    animation: menu3 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-
-.main li:hover .menu3 li:last-of-type {
-    animation: menu3 0.3s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
-
-@keyframes menu3 {
-    0% {
-        opacity: 0;
-        transform: translateX(20px);
+    .main li:hover .menu1 li:nth-of-type(2) {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
     }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/*------------- menu4 animation -------------------*/
-
-.main li:hover .menu4 li:first-of-type {
-    animation: menu4 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.main li:hover .menu4 li:nth-of-type(2) {
-    animation: menu4 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu4 li:nth-of-type(3) {
-    animation: menu4 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-
-.main li:hover .menu4 li:last-of-type {
-    animation: menu4 0.3s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
-
-@keyframes menu4 {
-    0% {
-        opacity: 0;
-        transform: translateX(50px) rotate(-90deg);
+    .main li:hover .menu1 li:nth-of-type(3) {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 0.9s;
     }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0) rotate(0);
-    }
-}
-
-/*------------- menu5 animation -------------------*/
-
-.main li:hover .menu5 li:first-of-type {
-    animation: menu5 0.3s ease-in-out forwards;
-    animation-delay: 0.3s;
-}
-
-.main li:hover .menu5 li:nth-of-type(2) {
-    animation: menu5 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu5 li:nth-of-type(3) {
-    animation: menu5 0.3s ease-in-out forwards;
-    animation-delay: 0.9s;
-}
-
-.main li:hover .menu5 li:last-of-type {
-    animation: menu5 0.3s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
-
-@keyframes menu5 {
-    0% {
-        opacity: 0;
-        transform: rotateX(-90deg);
+    .main li:hover .menu1 li:nth-of-type(4) {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 1.2s;
     }
 
-    100% {
-        opacity: 1;
-        transform: rotateX(0);
-    }
-}
-
-/*------------- menu6 animation -------------------*/
-
-.main li:hover .menu6 li:first-of-type {
-    animation: menu6 0.3s ease-in-out forwards;
-    animation-delay: 0.2s;
-}
-
-.main li:hover .menu6 li:nth-of-type(2) {
-    animation: menu6 0.3s ease-in-out forwards;
-    animation-delay: 0.4s;
-}
-
-.main li:hover .menu6 li:nth-of-type(3) {
-    animation: menu6 0.3s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
-
-.main li:hover .menu6 li:last-of-type {
-    animation: menu6 0.3s ease-in-out forwards;
-    animation-delay: 0.8s;
-}
-
-@keyframes menu6 {
-    0% {
-        opacity: 0;
-        transform: scale(2);
+    .main li:hover .menu1 li:nth-of-type(5) {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 1.5s;
     }
 
-    100% {
-        opacity: 1;
-        transform: scale(1);
+    .main li:hover .menu1 li:nth-of-type(6) {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 1.8s;
     }
-}
 
-/* my button style */
-.white-mode {
-    text-decoration: none;
-    padding: 7px 10px;
-    background-color: #122;
-    border-radius: 3px;
-    color: #fff;
-    transition: 0.35s ease-in-out;
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    font-family: sans-serif;
-}
+    .main li:hover .menu1 li:last-of-type {
+        animation: menu1 0.3s ease-in-out forwards;
+        animation-delay: 2.1s;
+    }
 
-.white-mode:hover {
-    background-color: #fff;
-    color: #122;
+    @keyframes menu1 {
+        from {
+            opacity: 0;
+            transform: translateX(30px) rotateY(90deg);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0) rotateY(0);
+        }
+    }
+
+    /*------------- menu2 animation -------------------*/
+
+    .main li:hover .menu2 li:first-of-type {
+        animation: menu2 0.3s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    .main li:hover .menu2 li:nth-of-type(2) {
+        animation: menu2 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .main li:hover .menu2 li:nth-of-type(3) {
+        animation: menu2 0.3s ease-in-out forwards;
+        animation-delay: 0.9s;
+    }
+
+    .main li:hover .menu2 li:last-of-type {
+        animation: menu2 0.3s ease-in-out forwards;
+        animation-delay: 1.2s;
+    }
+
+    @keyframes menu2 {
+        0% {
+            opacity: 0;
+            transform: scale(0.7);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: scale(1.1);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /*------------- menu3 animation -------------------*/
+
+    .main li:hover .menu3 li:first-of-type {
+        animation: menu3 0.3s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    .main li:hover .menu3 li:nth-of-type(2) {
+        animation: menu3 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .main li:hover .menu3 li:nth-of-type(3) {
+        animation: menu3 0.3s ease-in-out forwards;
+        animation-delay: 0.9s;
+    }
+
+    .main li:hover .menu3 li:last-of-type {
+        animation: menu3 0.3s ease-in-out forwards;
+        animation-delay: 1.2s;
+    }
+
+    @keyframes menu3 {
+        0% {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    /*------------- menu4 animation -------------------*/
+
+    .main li:hover .menu4 li:first-of-type {
+        animation: menu4 0.3s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    .main li:hover .menu4 li:nth-of-type(2) {
+        animation: menu4 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .main li:hover .menu4 li:nth-of-type(3) {
+        animation: menu4 0.3s ease-in-out forwards;
+        animation-delay: 0.9s;
+    }
+
+    .main li:hover .menu4 li:last-of-type {
+        animation: menu4 0.3s ease-in-out forwards;
+        animation-delay: 1.2s;
+    }
+
+    @keyframes menu4 {
+        0% {
+            opacity: 0;
+            transform: translateX(50px) rotate(-90deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateX(0) rotate(0);
+        }
+    }
+
+    /*------------- menu5 animation -------------------*/
+
+    .main li:hover .menu5 li:first-of-type {
+        animation: menu5 0.3s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    .main li:hover .menu5 li:nth-of-type(2) {
+        animation: menu5 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .main li:hover .menu5 li:nth-of-type(3) {
+        animation: menu5 0.3s ease-in-out forwards;
+        animation-delay: 0.9s;
+    }
+
+    .main li:hover .menu5 li:last-of-type {
+        animation: menu5 0.3s ease-in-out forwards;
+        animation-delay: 1.2s;
+    }
+
+    @keyframes menu5 {
+        0% {
+            opacity: 0;
+            transform: rotateX(-90deg);
+        }
+
+        100% {
+            opacity: 1;
+            transform: rotateX(0);
+        }
+    }
+
+    /*------------- menu6 animation -------------------*/
+
+    .main li:hover .menu6 li:first-of-type {
+        animation: menu6 0.3s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+
+    .main li:hover .menu6 li:nth-of-type(2) {
+        animation: menu6 0.3s ease-in-out forwards;
+        animation-delay: 0.4s;
+    }
+
+    .main li:hover .menu6 li:nth-of-type(3) {
+        animation: menu6 0.3s ease-in-out forwards;
+        animation-delay: 0.6s;
+    }
+
+    .main li:hover .menu6 li:last-of-type {
+        animation: menu6 0.3s ease-in-out forwards;
+        animation-delay: 0.8s;
+    }
+
+    @keyframes menu6 {
+        0% {
+            opacity: 0;
+            transform: scale(2);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    /* my button style */
+    .white-mode {
+        text-decoration: none;
+        padding: 7px 10px;
+        background-color: #122;
+        border-radius: 3px;
+        color: #fff;
+        transition: 0.35s ease-in-out;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        font-family: sans-serif;
+    }
+
+    .white-mode:hover {
+        background-color: #fff;
+        color: #122;
+    }
 }
