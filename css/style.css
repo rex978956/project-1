@@ -8,6 +8,7 @@
     --menu-position: fixed;
     --article-top: 75px;
     --article-position: fixed;
+    --drop-top: 9.5rem;
 }
 
 
@@ -158,8 +159,8 @@ h1 {
     flex-direction: row;
     justify-content: center;
     width: 100vw;
-    height: 4rem;
-    top: 9rem;
+    height: 3rem;
+    top: var(--drop-top);
     left: 0;
     box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
     /* ^ 子項最底下的線*/
@@ -192,9 +193,6 @@ h1 {
     color: inherit;
     font-size: 14px
 }
-
-
-
 
 #header li:hover .drop li:nth-of-type(1) {
     animation: drop 0.3s ease-in-out forwards;
@@ -264,5 +262,6 @@ h1 {
 
 
 #article {
-    position: relative;
+    /*position: relative;*/
+    /*top:4rem;*/
 }
