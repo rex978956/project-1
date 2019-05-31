@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url(https: //fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese);
-@import url(https: //fonts.googleapis.com/css?family=Noto+Serif);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 
 
 :root {
@@ -46,8 +46,8 @@ h1 {
 
 #Logo {
     float: inherit;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
 }
 
 
@@ -89,7 +89,7 @@ h1 {
 #header .menu>ul {
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -126,7 +126,7 @@ h1 {
     /*	z-index: 0;*/
     width: 100%;
     height: 100%;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,7 +137,9 @@ h1 {
 
 #header .menu>ul>li:first-child>a:before {
     border-color: transparent;
-} /*去掉第一條 | */
+}
+
+/*去掉第一條 | */
 
 #header .menu>ul>li>a:before {
     /*母項ㄉ*/
@@ -147,7 +149,8 @@ h1 {
     position: absolute;
     box-sizing: border-box;
     border-left: 1px solid rgba(40, 40, 40, .5);
-    content: "" /*可以神奇的弄出 | << 幹 原來這是左邊框*/
+    content: ""
+    /*可以神奇的弄出 | << 幹 原來這是左邊框*/
 }
 
 #header .drop {
@@ -262,6 +265,15 @@ h1 {
 
 
 #article {
-    /*position: relative;*/
-    /*top:4rem;*/
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/*
+#article .content {
+	position: relative;
+    top: 4rem;
+}
+*/
