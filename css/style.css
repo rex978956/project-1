@@ -1,339 +1,253 @@
 @charset "utf-8";
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
 
-@media only screen and (max-width: 480px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        background: #1e1e1e url(https://image.limeishu.org.tw/images/BG1.jpg);
-        background-size: cover;
-        height: 100vh;
-
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 1px;
-    }
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 }
 
-@media only screen and (min-width: 769px) {
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 
-    body {
-        background: #1e1e1e url(https://image.limeishu.org.tw/images/BG1.jpg);
-        background-size: cover;
-        height: 100vh;
+body {
+	line-height: 1;
+}
 
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 1px;
-    }
+ul {
+	list-style: none;
+}
 
-    h1 {
-        text-align: center;
-        color: #fff;
-        padding-top: 20px;
-    }
+a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
+	line-height: 1.4;
+	font-family: Noto Sans CJK TC, Noto Sans TC, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
+}
 
-    ul {
-        list-style: none;
-    }
+h1 {
+	text-align: center;
+	color: #f55;
+	padding: 20px;
+}
 
-    nav {
-        height: 40px;
-        margin: 40px auto;
-        background-color: rgba(23, 23, 50, 0.7);
-        text-align: center;
-        border-radius: 4px;
-    }
+#Logo {
+	float: inherit;
+	display:block;
+	margin:auto;
+}
 
-    .main {
-        display: flex;
-        justify-content: center;
-    }
 
-    .main > li {
-        margin: 0 2%;
-    }
+#header {
+	display: flex;
+	z-index: 1000;
+	position: relative;
+	height: auto;
+	width: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-end;
+}
 
-    .main > li a {
-        border-left: 1px solid rgba(23, 23, 50, 1);
-    }
+#header .menu {
+	z-index: 2;
+	width: 100%;
+	height: 4rem;
+	/*母bar的長度*/
+	display: flex;
+	position: fixed;
+	flex-direction: row;
+	justify-content: center;
+	transition: all .3s;
+	background: #fff;
+	color: #282828;
+	/*母項字顏色*/
+	opacity: 0;
+	pointer-events: none;
+}
 
-    a {
-        text-decoration: none;
-        color: #ffe;
-        text-transform: capitalize;
-        display: block;
-        padding: 10px 15px;
-        font-size: 16px;
-        transition: background-color 0.5s ease-in-out;
 
-        font-family: "Raleway", sans-serif;
-    }
+#header .menu.is-child {
+	pointer-events: auto;
+	opacity: 1;
+}
 
-    a:hover {
-        background-color: #631818;
-    }
+#header .menu>ul {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
+	background-color: #6ff;
+	/*青色bar*/
+}
 
-    .drop li {
-        opacity: 0;
-        transform-origin: top center;
-    }
+#header .menu>ul>li {
+	min-width: 7rem;
+	/*母選項寬度*/
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	/*    box-sizing: border-box; 好像沒作用*/
+}
 
-    .drop li:hover {
-        background-color: rgba(255, 255, 0, 0.7);
-    }
+@media screen and (min-width: 769px) {
 
-    .drop li a {
-        background-color: rgba(23, 23, 50, 0.7);
-        padding: 10px 0;
-    }
+	#header .menu>ul>li:hover {
+		transition: all .3s;
+		color: #ab6e4d;
+		background-color: #fff
+	}
 
-    /*------------- menu1 animation -------------------*/
+	#header .menu>ul>li:hover>ul {
+		transition: all .3s;
+		display: flex;
+	}
+}
 
-    .main li:hover .menu1 li:first-of-type {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
+#header .menu>ul>li>a {
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	font-size: 14px
+}
 
-    .main li:hover .menu1 li:nth-of-type(2) {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
+#header .menu>ul>li:first-child>a:before {
+	border-color: transparent;
+} /*去掉第一條 | */
 
-    .main li:hover .menu1 li:nth-of-type(3) {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
+#header .menu>ul>li>a:before {
+	/*母項ㄉ*/
+	z-index: -1;
+	width: 100%;
+	height: 1.2rem;
+	position: absolute;
+	box-sizing: border-box;
+	border-left: 1px solid rgba(40, 40, 40, .5);
+	content: "" /*可以神奇的弄出 | << 幹 原來這是左邊框*/
+}
 
-    .main li:hover .menu1 li:nth-of-type(4) {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 1.2s;
-    }
+#header .drop {
+	/*子項ㄉ*/
+	transition: all .3s;
+	z-index: -1;
+	display: none;
+	position: fixed;
+	flex-direction: row;
+	justify-content: center;
+	width: 100vw;
+	height: 4rem;
+	top: 9rem;
+	left: 0;
+	box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
+	/* ^ 子項最底下的線*/
+	background: #f4f4f4
+}
 
-    .main li:hover .menu1 li:nth-of-type(5) {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 1.5s;
-    }
+#header .drop>li {
+	/*子項寬度*/
+	width: 7rem;
+	height: 100%;
+	display: flex;
+	position: relative;
+	color: #282828;
+	transition: all .3s;
+	opacity: 0;
 
-    .main li:hover .menu1 li:nth-of-type(6) {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 1.8s;
-    }
+}
 
-    .main li:hover .menu1 li:last-of-type {
-        animation: menu1 0.3s ease-in-out forwards;
-        animation-delay: 2.1s;
-    }
+#header .drop>li:hover {
+	color: #ab6e4d;
+}
 
-    @keyframes menu1 {
-        from {
-            opacity: 0;
-            transform: translateX(30px) rotateY(90deg);
-        }
+#header .drop>li a {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: inherit;
+	font-size: 14px
+}
 
-        to {
-            opacity: 1;
-            transform: translateX(0) rotateY(0);
-        }
-    }
 
-    /*------------- menu2 animation -------------------*/
 
-    .main li:hover .menu2 li:first-of-type {
-        animation: menu2 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
 
-    .main li:hover .menu2 li:nth-of-type(2) {
-        animation: menu2 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
+#header li:hover .drop li:nth-of-type(1) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 0.3s;
+}
 
-    .main li:hover .menu2 li:nth-of-type(3) {
-        animation: menu2 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
+#header li:hover .drop li:nth-of-type(2) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 0.6s;
+}
 
-    .main li:hover .menu2 li:last-of-type {
-        animation: menu2 0.3s ease-in-out forwards;
-        animation-delay: 1.2s;
-    }
+#header li:hover .drop li:nth-of-type(3) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 0.9s;
+}
 
-    @keyframes menu2 {
-        0% {
-            opacity: 0;
-            transform: scale(0.7);
-        }
+#header li:hover .drop li:nth-of-type(4) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 1.2s;
+}
 
-        50% {
-            opacity: 0.5;
-            transform: scale(1.1);
-        }
+#header li:hover .drop li:nth-of-type(5) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 1.5s;
+}
 
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
+#header li:hover .drop li:nth-of-type(6) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 1.8s;
+}
 
-    /*------------- menu3 animation -------------------*/
+#header li:hover .drop li:nth-of-type(7) {
+	animation: drop 0.3s ease-in-out forwards;
+	animation-delay: 2.1s;
+}
 
-    .main li:hover .menu3 li:first-of-type {
-        animation: menu3 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
+@keyframes drop {
+	from {
+		opacity: 0;
+		transform: translateX(30px) rotateY(90deg);
+	}
 
-    .main li:hover .menu3 li:nth-of-type(2) {
-        animation: menu3 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
+	to {
+		opacity: 1;
+		transform: translateX(0) rotateY(0);
+	}
+}
 
-    .main li:hover .menu3 li:nth-of-type(3) {
-        animation: menu3 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
+#header .menu>ul>li>ul>li a span {
+	text-align: center;
+}
 
-    .main li:hover .menu3 li:last-of-type {
-        animation: menu3 0.3s ease-in-out forwards;
-        animation-delay: 1.2s;
-    }
+#header .menu>ul>li>ul>li a span {
+	display: flex;
+	justify-content: center
+}
 
-    @keyframes menu3 {
-        0% {
-            opacity: 0;
-            transform: translateX(20px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    /*------------- menu4 animation -------------------*/
-
-    .main li:hover .menu4 li:first-of-type {
-        animation: menu4 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
-
-    .main li:hover .menu4 li:nth-of-type(2) {
-        animation: menu4 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
-
-    .main li:hover .menu4 li:nth-of-type(3) {
-        animation: menu4 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
-
-    .main li:hover .menu4 li:last-of-type {
-        animation: menu4 0.3s ease-in-out forwards;
-        animation-delay: 1.2s;
-    }
-
-    @keyframes menu4 {
-        0% {
-            opacity: 0;
-            transform: translateX(50px) rotate(-90deg);
-        }
-
-        100% {
-            opacity: 1;
-            transform: translateX(0) rotate(0);
-        }
-    }
-
-    /*------------- menu5 animation -------------------*/
-
-    .main li:hover .menu5 li:first-of-type {
-        animation: menu5 0.3s ease-in-out forwards;
-        animation-delay: 0.3s;
-    }
-
-    .main li:hover .menu5 li:nth-of-type(2) {
-        animation: menu5 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
-
-    .main li:hover .menu5 li:nth-of-type(3) {
-        animation: menu5 0.3s ease-in-out forwards;
-        animation-delay: 0.9s;
-    }
-
-    .main li:hover .menu5 li:last-of-type {
-        animation: menu5 0.3s ease-in-out forwards;
-        animation-delay: 1.2s;
-    }
-
-    @keyframes menu5 {
-        0% {
-            opacity: 0;
-            transform: rotateX(-90deg);
-        }
-
-        100% {
-            opacity: 1;
-            transform: rotateX(0);
-        }
-    }
-
-    /*------------- menu6 animation -------------------*/
-
-    .main li:hover .menu6 li:first-of-type {
-        animation: menu6 0.3s ease-in-out forwards;
-        animation-delay: 0.2s;
-    }
-
-    .main li:hover .menu6 li:nth-of-type(2) {
-        animation: menu6 0.3s ease-in-out forwards;
-        animation-delay: 0.4s;
-    }
-
-    .main li:hover .menu6 li:nth-of-type(3) {
-        animation: menu6 0.3s ease-in-out forwards;
-        animation-delay: 0.6s;
-    }
-
-    .main li:hover .menu6 li:last-of-type {
-        animation: menu6 0.3s ease-in-out forwards;
-        animation-delay: 0.8s;
-    }
-
-    @keyframes menu6 {
-        0% {
-            opacity: 0;
-            transform: scale(2);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
-
-    /* my button style */
-    .white-mode {
-        text-decoration: none;
-        padding: 7px 10px;
-        background-color: #122;
-        border-radius: 3px;
-        color: #fff;
-        transition: 0.35s ease-in-out;
-        position: absolute;
-        left: 15px;
-        bottom: 15px;
-        font-family: sans-serif;
-    }
-
-    .white-mode:hover {
-        background-color: #fff;
-        color: #122;
-    }
+#main {
+	overflow-x: hidden;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	overflow: hidden
 }
