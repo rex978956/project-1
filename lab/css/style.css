@@ -18,17 +18,18 @@
 #article .recruit {
 	background: #000E2B;
 	width: 80vw;
-	height: 70vh;
+	height: 90vh;
 }
 
 #article .recruit > h2 {
 	color: #FFF;
 	font-size: 30px;
 	text-align: center;
-	padding: 10px;
+	padding: 1%;
 }
 
 #Tab-container {
+	height: 80%;
 	display: flex;
 	justify-content: center;
 }
@@ -44,7 +45,7 @@
 #tab > ul {
 	overflow: hidden;
 	margin: 0;
-	padding: 1% 1% 1% 1%;
+	padding: 2% 1% 1% 1%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -59,8 +60,8 @@
 	font-size: 18px;
 	color: #212121;
 	/*	float: left;*/
-	padding: 5px;
-	margin-left: 10px;
+	padding: 0px 5px;
+	margin-left: 20px;
 }
 
 /*頁籤div內容*/
@@ -106,7 +107,7 @@ span ~ #tab > div:first-of-type,
 #tab-5:target ~ #tab > div.tab-content-5,
 #tab-6:target ~ #tab > div.tab-content-6 {
 	visibility: visible;
-	height: 48vh;
+	height: 87%;
 	background: #fff;
 }
 
