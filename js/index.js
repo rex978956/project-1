@@ -9,6 +9,7 @@ function fixposition(scroll_pos) {
     var drop_top = 9.5;
     console.log("scroll_pos = " + scroll_pos);
     console.log("fixed = " + menu_top);
+	console.log(Math.ceil((scroll_pos/90)*5.5))
     if (menu_top >= 0) {
         document.documentElement.style.setProperty('--menu-top', menu_top + "px");
         document.documentElement.style.setProperty('--drop-top', drop_top + "rem");
