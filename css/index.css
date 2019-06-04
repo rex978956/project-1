@@ -12,6 +12,14 @@
 	margin-top: 5rem;
 }
 
+
+#article h1 {
+	font-size: 36px;
+	text-align: center;
+	color: #002700;
+	padding: 20px;
+}
+
 #article .content {
 	width: 80vw;
 	margin: 2vh 2vw;
