@@ -146,6 +146,7 @@ span ~ #tab > div:first-of-type,
 	min-height: 10vh;
 	width: 100%;
 	margin: 3vh;
+	border-radius:10px
 }
 
 #article .project > h3 {

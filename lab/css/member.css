@@ -5,7 +5,7 @@
 
 #article {
 	display: flex;
-	box-shadow: 0px 0px 100px 0px #a6a6a6;
+/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
 	margin: 1vw;
 	align-items: center;
 	flex-direction: column;
@@ -23,12 +23,12 @@
 	font-size: 40px;
 	padding: 5px;
 	border-bottom: solid 2px #1caa5d;
-	margin: 5vh 0 0 0;
+	margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
 	font-size: 35px;
-	margin-top: 7vh;
+	margin-top: 6vh;
 	margin-bottom: 3vh;
 }
 
@@ -41,6 +41,13 @@
 #article .content {
 	width: 90%;
 	margin: 2vh 2vw;
+}
+
+#article .degree {
+	padding: 1vh 0 2vh 2vw;
+	margin-bottom: 7vh;
+	box-shadow: 0px 0px 20px 0px #c8c8c8;
+	border-radius:10px;
 }
 
 #article .deglist {
@@ -70,9 +77,10 @@
 	font-weight: bold;
 	padding: 3px 8px;
 	border-radius: 3px;
+/*	margin-left: -35px;*/
 }
 
 #article .counter span{
-	font-size: 16px; 
+	font-size: 16px;
 }
 
