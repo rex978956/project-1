@@ -2,28 +2,15 @@ var last_known_scroll_position = 0;
 var ticking = false;
 
 function fixposition(scroll_pos) {
-	var htmlStyles = getComputedStyle(document.documentElement);
-	var init = 100;
-	var menu_top = init - scroll_pos;
-	var article_top = 75 + scroll_pos;
-	var drop_top = 9.5;
-	//    console.log("scroll_pos = " + scroll_pos);
-	//    console.log("fixed = " + menu_top);
-	//	console.log(Math.ceil((scroll_pos/90)*5.5))
-	if (menu_top >= 0) {
-		document.documentElement.style.setProperty('--menu-top', menu_top + "px");
-		document.documentElement.style.setProperty('--drop-top', drop_top + "rem");
-	} else {
-		document.documentElement.style.setProperty('--menu-top', "0px");
-		document.documentElement.style.setProperty('--drop-top', "4rem");
+    getComputedStyle(document.documentElement);
+    const init = 100;
+    let menu_top = init - scroll_pos;
+    const drop_top = parseInt(getComputedStyle(document.querySelector('.menu')).height);
+    if (menu_top <= 0) {
+	    menu_top = 0;
 	}
-	//	if (article_top <= 150) {
-	//		document.documentElement.style.setProperty('--article-top', article_top + "px");
-	//		document.documentElement.style.setProperty('--article-position', "fixed");
-	//	} else {
-	//		document.documentElement.style.setProperty('--article-top', "150px");
-	//		document.documentElement.style.setProperty('--article-position', "relative");
-	//	}
+    document.documentElement.style.setProperty('--menu-top', menu_top + "px");
+    document.documentElement.style.setProperty('--drop-top', menu_top + drop_top + "px");
 }
 
 window.addEventListener('scroll', function (e) {
