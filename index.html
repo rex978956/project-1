@@ -2,147 +2,92 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>首頁</title>
-    <link href="./css/index.css" rel="stylesheet"/>
-    <link href="./css/style.css" rel="stylesheet">
-    <script src="./js/vue.min.js"></script>
-    <script src="./js/index.js"></script>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<title>首頁</title>
+	<link href="./css/index.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet">
+	<script src="./js/vue.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="./js/timetable.js"></script>
+	<script src="./js/index.js"></script>
 </head>
 
 <body>
-<div id="main">
-    <a href="./index.html"><img id="Logo" src="./source/unnamed.jpg"></a>
-    <header id="header">
-        <div class="menu is-child" id="nav">
-            <ul>
-                <li>
-                    <a href="./index.html">
-                        <span>首頁</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>實驗室</span>
-                    </a>
-                    <ul class="drop">
-                        <li><a href="./lab/introduction.html"><span>實驗室介紹</span></a></li>
-                        <li><a href="./lab/member.html"><span>實驗室成員介紹</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>指導教授</span>
-                    </a>
-                    <ul class="drop">
-                        <li><a href="./advisor/bio.html"><span>簡歷</span></a></li>
-                        <li><a href="./advisor/experience.html"><span>工作經歷</span></a></li>
-                        <li><a href="./advisor/services.html"><span>學術服務</span></a></li>
-                        <li><a href="./advisor/award.html"><span>獲獎紀錄</span></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
-                        </li>
-                        <li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en"
-                               title="GoogleScholarCitation"><span>GSC</span></a></li>
-                        <li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./course/course.html">
-                        <span>開設課程</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./projects/projects.html">
-                        <span>研究計畫</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./publication/publication.html">
-                        <span>研究成果</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="./awards/awards.html">
-                        <span>榮譽事項</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>聯絡我們</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <article id="article">
-        <div class="content">
-            <h1>article title</h1>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-            <p>111</p>
-            <p>222</p>
-            <p>333</p>
-            <p>444</p>
-            <p>555</p>
-            <p>666</p>
-            <p>777</p>
-            <p>888</p>
-            <p>999</p>
-            <p>000</p>
-        </div>
-    </article>
-    <footer id="footer" v-html="footer"></footer>
-</div>
-<script src="./js/index.vue.js"></script>
+	<div id="main">
+		<a href="./index.html"><img id="Logo" src="./source/unnamed.jpg"></a>
+		<header id="header">
+			<div class="menu is-child" id="nav">
+				<ul>
+					<li>
+						<a href="./index.html">
+							<span>首頁</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>實驗室</span>
+						</a>
+						<ul class="drop">
+							<li><a href="./lab/introduction.html"><span>實驗室介紹</span></a></li>
+							<li><a href="./lab/member.html"><span>實驗室成員介紹</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">
+							<span>指導教授</span>
+						</a>
+						<ul class="drop">
+							<li><a href="./advisor/bio.html"><span>簡歷</span></a></li>
+							<li><a href="./advisor/experience.html"><span>工作經歷</span></a></li>
+							<li><a href="./advisor/services.html"><span>學術服務</span></a></li>
+							<li><a href="./advisor/award.html"><span>獲獎紀錄</span></a></li>
+							<li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
+							</li>
+							<li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en" title="GoogleScholarCitation"><span>GSC</span></a></li>
+							<li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="./course/course.html">
+							<span>開設課程</span>
+						</a>
+					</li>
+					<li>
+						<a href="./projects/projects.html">
+							<span>研究計畫</span>
+						</a>
+					</li>
+					<li>
+						<a href="./publication/publication.html">
+							<span>研究成果</span>
+						</a>
+					</li>
+					<li>
+						<a href="./awards/awards.html">
+							<span>榮譽事項</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>聯絡我們</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</header>
+		<article id="article">
+			<div class="header">
+				<h1>首頁</h1>
+			</div>
+			<div id="coursesTable">
+				<h2>本學期課表</h2>
+			</div>
+		</article>
+		<footer id="footer" v-html="footer"></footer>
+	</div>
+	<script src="./js/index.vue.js"></script>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
