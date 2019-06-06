@@ -2,148 +2,164 @@
 <html lang="zh-Hant-TW">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>簡歷</title>
-	<link rel="stylesheet" href="./css/bio.css" />
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/vue.min.js"></script>
-	<script src="../js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>簡歷</title>
+    <link href="./css/bio.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
-		<header id="header">
-			<div id="nav" class="menu is-child">
-				<ul>
-					<li>
-						<a href="../index.html">
-							<span>首頁</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span>實驗室</span>
-						</a>
-						<ul class="drop">
-							<li><a href="../lab/introduction.html"><span>實驗室介紹</span></a></li>
-							<li><a href="../lab/member.html"><span>實驗室成員介紹</span></a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">
-							<span>指導教授</span>
-						</a>
-						<ul class="drop">
-							<div class="position">
-								<div class="position-header">
-									<h4>指導教授</h4>
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-										<path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
-									</svg>
-								</div>
-								<h2>簡歷</h2>
-							</div>
-							<li><a href="./bio.html"><span>簡歷</span></a></li>
-							<li><a href="./experience.html"><span>工作經歷</span></a></li>
-							<li><a href="./services.html"><span>學術服務</span></a></li>
-							<li><a href="./award.html"><span>獲獎紀錄</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a></li>
-							<li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en" title="GoogleScholarCitation"><span>GSC</span></a></li>
-							<li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="../course/course.html">
-							<span>開設課程</span>
-						</a>
-					</li>
-					<li>
-						<a href="../projects/projects.html">
-							<span>研究計畫</span>
-						</a>
-					</li>
-					<li>
-						<a href="../publication/publication.html">
-							<span>研究成果</span>
-						</a>
-					</li>
-					<li>
-						<a href="../awards/awards.html">
-							<span>榮譽事項</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span>聯絡我們</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</header>
+<div id="main">
+    <a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
+    <header id="header">
+        <div class="menu is-child" id="nav">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span>首頁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>實驗室</span>
+                    </a>
+                    <ul class="drop">
+                        <li><a href="../lab/introduction.html"><span>實驗室介紹</span></a></li>
+                        <li><a href="../lab/member.html"><span>實驗室成員介紹</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>指導教授</span>
+                    </a>
+                    <ul class="drop">
+                        <div class="position">
+                            <div class="position-header">
+                                <h4>指導教授</h4>
+                                <svg viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                                          fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <h2>簡歷</h2>
+                        </div>
+                        <li><a href="./bio.html"><span>簡歷</span></a></li>
+                        <li><a href="./experience.html"><span>工作經歷</span></a></li>
+                        <li><a href="./services.html"><span>學術服務</span></a></li>
+                        <li><a href="./award.html"><span>獲獎紀錄</span></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
+                        </li>
+                        <li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en"
+                               title="GoogleScholarCitation"><span>GSC</span></a></li>
+                        <li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../course/course.html">
+                        <span>開設課程</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../projects/projects.html">
+                        <span>研究計畫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../publication/publication.html">
+                        <span>研究成果</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../awards/awards.html">
+                        <span>榮譽事項</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>聯絡我們</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
-		<article id="article">
-			<div class="header">
-				<h1>簡歷</h1>
-			</div>
-			<section>
-				<div class="intro">
-					<div class="content">
-						<h4>潘孟鉉 Meng-Shiuan Pan</h4>
-						<p>淡江大學 資訊工程系 副教授</p>
-						<p>Associate Professor, Dept. CSIE, Tamkang University </p>
-						<p>研究室: E659</p>
-						<p>電話: 02-2621-5656 分機 3520</p>
-						<p>Email: <a href="mailto:mspan@mail.tku.edu.tw">mspan@mail.tku.edu.tw</a></p>
-					</div>
-					<div class="sticker">
-						<img src="./images/sticker.jpg">
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="bio">
-					<div class="bio-content">
-						<h3>Bio</h3>
-						<p>Meng-Shiuan Pan received the BS and MS degrees from the National Chung Cheng University and National Tsing Hua University, Taiwan, in 2001 and 2003, respectively, and the Ph.D. degree from the National Chiao Tung University, Taiwan, in 2008. After obtaining his Ph.D degree, Dr. Pan worked in HTMM Corporation, Hsin-Chu, Taiwan for three years, and dedicated in designing and implementing 3GPP R99/R5/R6 layer 2/3 protocol stacks. Dr. Pan is now an associate professor of department of computer science and information engineering, Tamkang University, Taiwan. He also serves as an associate editor of International Journal of Distributed Sensor Networks (IJDSN). His research interests include wireless sensor network, mobile computing, and LTE-A networks. Dr. Pan is now a member of IEEE.</p>
-					</div>
-					<div class="education">
-						<h3>Education</h3>
-						<ol class="counter">
-							<li><span>Bachelor degree, Department of Electrical Engineering, National Chung Cheng University 中正電機 (1997.9 ~ 2001.1)</span></li>
-							<li><span>Master degree, Institute of Communications Engineering, National Tsing Hua University 清大通訊 (2001.2 ~ 2003.6)</span></li>
-							<li><span>Ph.D. degree, Department of Computer Science, National Chiao Tung University 交大資工 (2003.9 ~ 2008.4)</span></li>
-						</ol>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="awards">
-					<h3>Awards</h3>
-					<ol class="counter">
-						<li><span>科技部大專校院特殊優秀人才獎勵 (MOST Research Award), 2014, 2015, 2016, 2017, 2018</span></li>
-						<li><span>淡江大學工學院優良導師, 2017</span></li>
-						<li><span>Best conference paper award, IEEE International Conference on Applied System Innovation (ICASI), 2016. (link)</span></li>
-						<li><span>淡江大學教學優良教師 (Tamkang Excellent Teaching Award), 2015.</span></li>
-						<li><span>淡江大學傑出研究教師 (Tamkang Outstanding Research Award), 2015.</span></li>
-						<li><span>淡江大學教師評鑑優等獎 (Tamkang Excellent Teacher Award), 2015.</span></li>
-						<li><span>淡江大學研究獎勵 (Tamkang Research Award), 2013, 2014, 2015.</span></li>
-						<li><span>淡江大學推廣專題研究成效卓越獎牌, 2014.</span></li>
-						<li><span>淡江大學教學優良教材獎 (Tamkang Excellent Teaching Material Award), 2014.</span></li>
-						<li><span>中華民國資訊學會 博士論文獎 佳作 (IICM Excellent Ph.D Thesis Award), 2008.</span></li>
-						<li><span>交通大學 傑出教學助理 (NCTU Outstanding TA), 2007.</span></li>
-						<li><span>交通大學資訊工程所 傑出研究獎 (NCTU CS Dept. Student Outstanding Research Award), 2006.</span></li>
-						<li><span>入圍第四屆ACM MobiWAC國際會議最佳論文獎候選名單 (Best Paper Candidate of MobiWac Conference), 2006.</span></li>
-						<li><span>清華大學通訊所甄試入學第一名, 2001.</span></li>
-						<li><span>八十九學年度國科會大專學生參與專題研究計畫獎學金, “VoIP硬 體平台之設計分析及效能評估”, 2000.</span></li>
-					</ol>
-				</div>
-			</section>
-		</article>
-		<footer id="footer" v-html="footer"></footer>
-	</div>
-	<script src="../js/index.vue.js"></script>
+    <article id="article">
+        <div class="header">
+            <h1>簡歷</h1>
+        </div>
+        <section>
+            <div class="intro">
+                <div class="content">
+                    <h4>潘孟鉉 Meng-Shiuan Pan</h4>
+                    <p>淡江大學 資訊工程系 副教授</p>
+                    <p>Associate Professor, Dept. CSIE, Tamkang University </p>
+                    <p>研究室: E659</p>
+                    <p>電話: 02-2621-5656 分機 3520</p>
+                    <p>Email: <a href="mailto:mspan@mail.tku.edu.tw">mspan@mail.tku.edu.tw</a></p>
+                </div>
+                <div class="sticker">
+                    <img src="./images/sticker.jpg">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bio">
+                <div class="bio-content">
+                    <h3>Bio</h3>
+                    <p>Meng-Shiuan Pan received the BS and MS degrees from the National Chung Cheng University and
+                        National Tsing Hua University, Taiwan, in 2001 and 2003, respectively, and the Ph.D. degree from
+                        the National Chiao Tung University, Taiwan, in 2008. After obtaining his Ph.D degree, Dr. Pan
+                        worked in HTMM Corporation, Hsin-Chu, Taiwan for three years, and dedicated in designing and
+                        implementing 3GPP R99/R5/R6 layer 2/3 protocol stacks. Dr. Pan is now an associate professor of
+                        department of computer science and information engineering, Tamkang University, Taiwan. He also
+                        serves as an associate editor of International Journal of Distributed Sensor Networks (IJDSN).
+                        His research interests include wireless sensor network, mobile computing, and LTE-A networks.
+                        Dr. Pan is now a member of IEEE.</p>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ol class="counter">
+                        <li><span>Bachelor degree, Department of Electrical Engineering, National Chung Cheng University 中正電機 (1997.9 ~ 2001.1)</span>
+                        </li>
+                        <li><span>Master degree, Institute of Communications Engineering, National Tsing Hua University 清大通訊 (2001.2 ~ 2003.6)</span>
+                        </li>
+                        <li><span>Ph.D. degree, Department of Computer Science, National Chiao Tung University 交大資工 (2003.9 ~ 2008.4)</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="awards">
+                <h3>Awards</h3>
+                <ol class="counter">
+                    <li><span>科技部大專校院特殊優秀人才獎勵 (MOST Research Award), 2014, 2015, 2016, 2017, 2018</span></li>
+                    <li><span>淡江大學工學院優良導師, 2017</span></li>
+                    <li><span>Best conference paper award, IEEE International Conference on Applied System Innovation (ICASI), 2016. (link)</span>
+                    </li>
+                    <li><span>淡江大學教學優良教師 (Tamkang Excellent Teaching Award), 2015.</span></li>
+                    <li><span>淡江大學傑出研究教師 (Tamkang Outstanding Research Award), 2015.</span></li>
+                    <li><span>淡江大學教師評鑑優等獎 (Tamkang Excellent Teacher Award), 2015.</span></li>
+                    <li><span>淡江大學研究獎勵 (Tamkang Research Award), 2013, 2014, 2015.</span></li>
+                    <li><span>淡江大學推廣專題研究成效卓越獎牌, 2014.</span></li>
+                    <li><span>淡江大學教學優良教材獎 (Tamkang Excellent Teaching Material Award), 2014.</span></li>
+                    <li><span>中華民國資訊學會 博士論文獎 佳作 (IICM Excellent Ph.D Thesis Award), 2008.</span></li>
+                    <li><span>交通大學 傑出教學助理 (NCTU Outstanding TA), 2007.</span></li>
+                    <li><span>交通大學資訊工程所 傑出研究獎 (NCTU CS Dept. Student Outstanding Research Award), 2006.</span></li>
+                    <li><span>入圍第四屆ACM MobiWAC國際會議最佳論文獎候選名單 (Best Paper Candidate of MobiWac Conference), 2006.</span>
+                    </li>
+                    <li><span>清華大學通訊所甄試入學第一名, 2001.</span></li>
+                    <li><span>八十九學年度國科會大專學生參與專題研究計畫獎學金, “VoIP硬 體平台之設計分析及效能評估”, 2000.</span></li>
+                </ol>
+            </div>
+        </section>
+    </article>
+    <footer id="footer" v-html="footer"></footer>
+</div>
+<script src="../js/index.vue.js"></script>
 </body>
 
 </html>

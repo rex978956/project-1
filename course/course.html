@@ -2,131 +2,133 @@
 <html lang="zh-Hant-TW">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>開設課程</title>
-	<link rel="stylesheet" href="./css/course.css" />
-	<link rel="stylesheet" href="../css/style.css">
-	<script src="../js/vue.min.js"></script>
-	<script src="../js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>開設課程</title>
+    <link href="./css/course.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/index.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
-		<header id="header">
-			<div id="nav" class="menu is-child">
-				<ul>
-					<li>
-						<a href="../index.html">
-							<span>首頁</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span>實驗室</span>
-						</a>
-						<ul class="drop">
-							<li><a href="../lab/introduction.html"><span>實驗室介紹</span></a></li>
-							<li><a href="../lab/member.html"><span>實驗室成員介紹</span></a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">
-							<span>指導教授</span>
-						</a>
-						<ul class="drop">
-							<li><a href="../advisor/bio.html"><span>簡歷</span></a></li>
-							<li><a href="../advisor/experience.html"><span>工作經歷</span></a></li>
-							<li><a href="../advisor/services.html"><span>學術服務</span></a></li>
-							<li><a href="../advisor/award.html"><span>獲獎紀錄</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a></li>
-							<li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en" title="GoogleScholarCitation"><span>GSC</span></a></li>
-							<li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
-						</ul>
-					</li>
-					<li>
-						<a href="./course.html">
-							<span>開設課程</span>
-						</a>
-					</li>
-					<li>
-						<a href="../projects/projects.html">
-							<span>研究計畫</span>
-						</a>
-					</li>
-					<li>
-						<a href="../publication/publication.html">
-							<span>研究成果</span>
-						</a>
-					</li>
-					<li>
-						<a href="../awards/awards.html">
-							<span>榮譽事項</span>
-						</a>
-					</li>
-					<li>
-						<a href="#">
-							<span>聯絡我們</span>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</header>
-		<article id="article">
-			<div class="header">
-				<h1>開設課程</h1>
-			</div>
-			<div class="content">
-				<div class="academic_102_1">
-					<h3>102學年度 第一學期</h3>
-					<ol class="counter">
-						<li><span>作業系統 (資工 3C)</span></li>
-						<li><span>無線感測網路監控技術於生態觀測 (資工 4)</span></li>
-						<li><span>資料結構與處理 (資工 2進學)</span></li>
-						<li><span>網際網路技術 (資網所)</span></li>
-					</ol>
-				</div>
-				<div class="academic_101_2">
-					<h3>101學年度 第二學期</h3>
-					<ol class="counter">
-						<li><span>資訊概論 (歷史 1)</span></li>
-						<li><span>作業系統 (資工 3C)</span></li>
-						<li><span>機率論 (資工 2A)</span></li>
-						<li><span>無線數據與無線電信網路實務 (研究所)</span></li>
-					</ol>
-				</div>
-				<div class="academic_101_1">
-					<h3>101學年度 第一學期</h3>
-					<ol class="counter">
-						<li><span>資訊概論 (歷史 1)</span></li>
-						<li><span>作業系統 (資工 3C)</span></li>
-						<li><span>無線感測網路監控技術於生態觀測 (資工 4)</span></li>
-					</ol>
-				</div>
-				<div class="academic_100_2">
-					<h3>100學年度 第二學期</h3>
-					<ol class="counter">
-						<li><span>資訊概論 (歷史 1)</span></li>
-						<li><span>作業系統 (資工 3B)</span></li>
-						<li><span>作業系統 (資工 3進學)</span></li>
-						<li><span>網際網路技術 (研究所)</span></li>
-					</ol>
-				</div>
-				<div class="academic_100_1">
-					<h3>100學年度 第一學期</h3>
-					<ol class="counter">
-						<li><span>資訊概論 (歷史 1)</span></li>
-						<li><span>作業系統 (資工 3B)</span></li>
-						<li><span>作業系統 (資工 3進學)</span></li>
-						<li><span>嵌入式作業系統建置 (資工 4)</span></li>
-					</ol>
-				</div>
-			</div>
-		</article>
-		<footer id="footer" v-html="footer"></footer>
-	</div>
-	<script src="../js/index.vue.js"></script>
+<div id="main">
+    <a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
+    <header id="header">
+        <div class="menu is-child" id="nav">
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <span>首頁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>實驗室</span>
+                    </a>
+                    <ul class="drop">
+                        <li><a href="../lab/introduction.html"><span>實驗室介紹</span></a></li>
+                        <li><a href="../lab/member.html"><span>實驗室成員介紹</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>指導教授</span>
+                    </a>
+                    <ul class="drop">
+                        <li><a href="../advisor/bio.html"><span>簡歷</span></a></li>
+                        <li><a href="../advisor/experience.html"><span>工作經歷</span></a></li>
+                        <li><a href="../advisor/services.html"><span>學術服務</span></a></li>
+                        <li><a href="../advisor/award.html"><span>獲獎紀錄</span></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
+                        </li>
+                        <li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en"
+                               title="GoogleScholarCitation"><span>GSC</span></a></li>
+                        <li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./course.html">
+                        <span>開設課程</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../projects/projects.html">
+                        <span>研究計畫</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../publication/publication.html">
+                        <span>研究成果</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../awards/awards.html">
+                        <span>榮譽事項</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>聯絡我們</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <article id="article">
+        <div class="header">
+            <h1>開設課程</h1>
+        </div>
+        <div class="content">
+            <div class="academic_102_1">
+                <h3>102學年度 第一學期</h3>
+                <ol class="counter">
+                    <li><span>作業系統 (資工 3C)</span></li>
+                    <li><span>無線感測網路監控技術於生態觀測 (資工 4)</span></li>
+                    <li><span>資料結構與處理 (資工 2進學)</span></li>
+                    <li><span>網際網路技術 (資網所)</span></li>
+                </ol>
+            </div>
+            <div class="academic_101_2">
+                <h3>101學年度 第二學期</h3>
+                <ol class="counter">
+                    <li><span>資訊概論 (歷史 1)</span></li>
+                    <li><span>作業系統 (資工 3C)</span></li>
+                    <li><span>機率論 (資工 2A)</span></li>
+                    <li><span>無線數據與無線電信網路實務 (研究所)</span></li>
+                </ol>
+            </div>
+            <div class="academic_101_1">
+                <h3>101學年度 第一學期</h3>
+                <ol class="counter">
+                    <li><span>資訊概論 (歷史 1)</span></li>
+                    <li><span>作業系統 (資工 3C)</span></li>
+                    <li><span>無線感測網路監控技術於生態觀測 (資工 4)</span></li>
+                </ol>
+            </div>
+            <div class="academic_100_2">
+                <h3>100學年度 第二學期</h3>
+                <ol class="counter">
+                    <li><span>資訊概論 (歷史 1)</span></li>
+                    <li><span>作業系統 (資工 3B)</span></li>
+                    <li><span>作業系統 (資工 3進學)</span></li>
+                    <li><span>網際網路技術 (研究所)</span></li>
+                </ol>
+            </div>
+            <div class="academic_100_1">
+                <h3>100學年度 第一學期</h3>
+                <ol class="counter">
+                    <li><span>資訊概論 (歷史 1)</span></li>
+                    <li><span>作業系統 (資工 3B)</span></li>
+                    <li><span>作業系統 (資工 3進學)</span></li>
+                    <li><span>嵌入式作業系統建置 (資工 4)</span></li>
+                </ol>
+            </div>
+        </div>
+    </article>
+    <footer id="footer" v-html="footer"></footer>
+</div>
+<script src="../js/index.vue.js"></script>
 </body>
 
 </html>
