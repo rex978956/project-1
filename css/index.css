@@ -24,7 +24,7 @@
 
 #article h2 {
 	font-size: 35px;
-	margin-top: 5vh;
+	margin-top: 3vh;
 	margin-bottom: 3vh;
 }
 
@@ -33,6 +33,21 @@
 	margin-top: 4vh;
 	margin-bottom: 2vh;
 }
+
+
+#lab {
+	width: 70vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2vh 2vw 4vh 2vw;
+	padding: 3vh 0;
+	box-shadow: 0px 0px 50px 0px #b7b7b7;
+	border-radius: 10px;
+}
+
+
 
 #coursesTable {
 	display: flex;
@@ -179,14 +194,12 @@
 	font-weight: bold;
 	font-size: 14px;
 	z-index: 100;
-/*	background: #c8c8c8;*/
+	/*	background: #c8c8c8;*/
 	width: 100%;
 	opacity: 0.6;
 }
 
-#coursesTable .highlight-min:hover {
-	
-}
+#coursesTable .highlight-min:hover {}
 
 
 
