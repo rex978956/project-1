@@ -34,59 +34,6 @@
 	margin-bottom: 2vh;
 }
 
-@media screen and (min-width: 621px) {
-	#article .intro {
-		width: 70vw;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin: 8vh 2vw;
-		padding: 3vh 0;
-		box-shadow: 0px 0px 50px 0px #b7b7b7;
-		border-radius: 10px;
-	}
-
-	#article .content a {
-		color: #5a1f1b;
-	}
-
-	#article .content h4 {
-		font-weight: 100;
-	}
-
-	#article .sticker {
-		margin-left: 2vw;
-	}
-}
-
-
-@media screen and (max-width: 620px) {
-	#article .intro {
-		padding: 5vw;
-		display: flex;
-		align-items: center;
-		flex-direction: column-reverse;
-		box-shadow: 0px 0px 50px 0px #b7b7b7;
-		border-radius: 10px;
-		margin-bottom: 5vh;
-		margin-top: 3vh;
-	}
-
-	#article h4 {
-		font-size: 25px;
-	}
-
-	#article .content a {
-		color: #5a1f1b;
-	}
-
-	#article .sticker {
-		margin: 3vh 0;
-	}
-}
-
-
-
 #coursesTable {
 	display: flex;
 	flex-direction: column;
@@ -98,6 +45,7 @@
 	height: 100%;
 	background: #fff;
 	box-shadow: 0px 0px 50px 0px #b7b7b7;
+	border-radius: 10px;
 }
 
 #courseWrapper {
@@ -229,9 +177,16 @@
 	margin: 0;
 	color: #f00;
 	font-weight: bold;
+	font-size: 14px;
+	z-index: 100;
+/*	background: #c8c8c8;*/
+	width: 100%;
+	opacity: 0.6;
 }
 
-#coursesTable .highlight-min:hover {}
+#coursesTable .highlight-min:hover {
+	
+}
 
 
 
@@ -264,6 +219,32 @@
 }
 
 
+@media screen and (min-width: 621px) {
+	#article .intro {
+		width: 70vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 8vh 2vw;
+		padding: 3vh 0;
+		box-shadow: 0px 0px 50px 0px #b7b7b7;
+		border-radius: 10px;
+	}
+
+	#article .content a {
+		color: #5a1f1b;
+	}
+
+	#article .content h4 {
+		font-weight: 100;
+	}
+
+	#article .sticker {
+		margin-left: 2vw;
+	}
+}
+
+
 @media screen and (max-width: 620px) {
 	#article {
 		display: flex;
@@ -273,8 +254,31 @@
 		width: 90vw;
 	}
 
+	#article .intro {
+		padding: 5vw;
+		display: flex;
+		align-items: center;
+		flex-direction: column-reverse;
+		box-shadow: 0px 0px 50px 0px #b7b7b7;
+		border-radius: 10px;
+		margin-bottom: 5vh;
+		margin-top: 3vh;
+	}
+
+	#article h4 {
+		font-size: 25px;
+	}
+
+	#article .content a {
+		color: #5a1f1b;
+	}
+
+	#article .sticker {
+		margin: 3vh 0;
+	}
+
 	#coursesTable .Courses-content li div {
-		font-size: 11px;
+		font-size: 8px;
 	}
 
 	#coursesTable {
@@ -284,6 +288,13 @@
 	}
 
 	#courseWrapper {
-		width: 73vw;
+		width: 75vw;
+	}
+
+	#coursesTable .highlight-min p {
+		margin: 0;
+		color: #f00;
+		font-weight: bold;
+		font-size: 8px;
 	}
 }

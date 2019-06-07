@@ -1,16 +1,17 @@
-* {
-    box-sizing: 0;
+#article {
+	display: flex;
+	/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
+	margin: 1vw;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 3rem;
+	width: 75vw;
 }
 
-
-#article {
-    display: flex;
-    /*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
-    margin: 1vw;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 3rem;
-    width: 70vw;
+@media screen and (max-width: 620px) {
+	#article {
+		width: 95vw;
+	}
 }
 
 #article .header {
@@ -20,20 +21,16 @@
 }
 
 #article .header h1 {
-    font-size: 40px;
-    padding: 5px;
     border-bottom: solid 2px #1caa5d;
     margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
-    font-size: 35px;
     margin-top: 6vh;
     margin-bottom: 3vh;
 }
 
 #article h3 {
-    font-size: 30px;
     margin-top: 4vh;
     margin-bottom: 2vh;
 }
@@ -44,10 +41,10 @@
 }
 
 #article .degree {
-    padding: 1vh 0 2vh 2vw;
-    margin-bottom: 7vh;
-    box-shadow: 0px 0px 20px 0px #c8c8c8;
-    border-radius: 10px;
+    padding: 2vh 3vw;
+	box-shadow: 0px 0px 50px 0px #b7b7b7;
+	border-radius: 10px;
+	margin-bottom: 4vh;
 }
 
 #article .deglist {
@@ -62,6 +59,7 @@
 
 
 #article .counter li {
+	margin-left: 1vw;
     counter-increment: step-counter;
     margin-bottom: 10px;
     line-height: 4vh;

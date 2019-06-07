@@ -17,29 +17,28 @@
 #article .recruit {
     background: #cccac4;
     width: 100vw;
-    height: 90vh;
+	display: flex;
+	flex-direction: column;
 }
 
 #article .recruit > h2 {
     color: #666c70;
     text-align: center;
-    padding: 1%;
+    padding: 1vh;
 }
 
 #Tab-container {
-    height: 80%;
     display: flex;
     justify-content: center;
 }
 
-
 #tab {
+	height: 85vh;
     width: 90%;
-    background: #cccac4; /*tab bar*/
-    /*	border: solid 1px #1caa5d;*/
+    background: #cccac4;
 }
 
-/* 頁籤ul */
+
 #tab > ul {
     overflow: hidden;
     margin: 0;
@@ -57,7 +56,6 @@
     text-decoration: none;
     font-size: 18px;
     color: #fff;
-    /*	float: left;*/
     padding: 0px 5px;
     margin-left: 20px;
 }
@@ -80,7 +78,6 @@
 span:target ~ #tab > ul li:first-child a {
     background: #cccac4;
     color: #fff;
-    /*第一個*/
 }
 
 span:target ~ #tab > div:first-of-type {

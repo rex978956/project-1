@@ -12,7 +12,7 @@
 		this.gridOnClick = typeof option.gridOnClick === "function" ? option.gridOnClick : undefined;
 		var styles = option.styles || {};
 		this.leftHandWidth = styles.leftHandWidth || 40;
-		this.Gheight = styles.Gheight || 48;
+		this.Gheight = styles.Gheight || 70;
 		this.defaultPalette = ["#f05261", "#48a8e4", "#ffd061", "#52db9a", "#70d3e6", "#52db9a", "#3f51b5", "#f3d147", "#4adbc3", "#673ab7", "#f3db49", "#76bfcd", "#b495e1", "#ff9800", "#8bc34a"];
 		this.palette = (typeof styles.palette === "boolean" && !styles.palett) ? false : (styles.palette || []).concat(this.defaultPalette);
 		this._init();
@@ -139,8 +139,8 @@
 					for (var h = 8; h < 22; h++) {
 						if (highlightMin < 8 * 60 + 10)
 							break;
-						if (highlightMin <= (h * 60 + 10)) {
-							position = h - 8;
+						if (highlightMin < (h * 60 + 10)) {
+							position = h - 9;
 							break;
 						}
 					}
