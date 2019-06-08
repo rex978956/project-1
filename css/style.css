@@ -102,6 +102,10 @@ h3 {
 		pointer-events: auto;
 		opacity: 1;
 	}
+	
+	#nav .menu-logo{
+		display: none;
+	}
 
 	#nav > ul {
 		width: 100%;
