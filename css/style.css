@@ -4,383 +4,671 @@
 
 
 :root {
-    --menu-top: 100;
-    --menu-position: fixed;
-    --article-top: 75px;
-    --article-position: fixed;
-    --drop-top: 10rem;
+	--menu-top: 100;
+	--menu-position: fixed;
+	--article-top: 75px;
+	--article-position: fixed;
+	--drop-top: 10rem;
 }
 
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+	display: block;
 }
 
 body {
-    line-height: 1;
-    background-color: #e4dfd7;
+	line-height: 1;
+	background-color: #e4dfd7;
 }
 
 ul {
-    list-style: none;
+	list-style: none;
 }
 
 a, h1, h2, h3, h4, h5, h6, li, p, span, ul {
-    line-height: 1.5;
-    font-family: Noto Sans CJK TC, Noto Sans TC, sans-serif;
-    font-weight: 400;
-    letter-spacing: 1px;
+	line-height: 1.5;
+	font-family: Noto Sans CJK TC, Noto Sans TC, sans-serif;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 
 h1 {
-    font-size: 40px;
+	font-size: 40px;
 }
 
 h2 {
-    font-size: 35px;
+	font-size: 35px;
 }
 
 h3 {
-    font-size: 30px;
+	font-size: 30px;
 }
 
-#main {
-    overflow-x: hidden;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    overflow: hidden;
-    align-items: center;
+@media screen and (min-width: 875px) {
+	#main {
+		overflow-x: hidden;
+		width: 100wh;
+		min-height: 100vh;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		overflow: hidden;
+		align-items: center;
+	}
+
+	#Logo {
+		float: inherit;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+
+
+	#header {
+		display: flex;
+		/*	z-index: 1000;*/
+		position: relative;
+		height: auto;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	#nav {
+		/*	z-index: 2;*/
+		width: 100%;
+		height: 4rem;
+		/*母bar的長度*/
+		display: flex;
+		position: fixed;
+		top: var(--menu-top, 0);
+		flex-direction: row;
+		justify-content: center;
+		transition: all .3s;
+		background: #fff;
+		color: #fff;
+		pointer-events: none;
+		z-index: 1000;
+		box-shadow: 0px 0px 20px 0px #a6a6a6;
+		pointer-events: auto;
+		opacity: 1;
+	}
+
+	#nav > ul {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
+		background-color: #666c70;
+		/*青色bar*/
+	}
+
+	#nav > ul > li {
+		min-width: 7rem;
+		/*母選項寬度*/
+		height: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		/*    box-sizing: border-box; 好像沒作用*/
+	}
+
+
+
+	#nav > ul > li:hover {
+		transition: all .3s;
+		color: #ab6e4d;
+		background-color: #666c70
+	}
+
+	#nav > ul > li:hover > ul {
+		transition: all .3s;
+		display: flex;
+	}
+
+	#nav > ul > li > a {
+		/*	z-index: 0;*/
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: inherit;
+		font-size: 14px
+	}
+
+	#nav > ul > li:first-child > a:before {
+		border-color: transparent;
+	}
+
+	/*去掉第一條 | */
+
+	#nav > ul > li > a:before {
+		/*母項ㄉ*/
+		/*	z-index: -1;*/
+		width: 100%;
+		height: 1.2rem;
+		position: absolute;
+		box-sizing: border-box;
+		border-left: 1px solid rgba(40, 40, 40, .5);
+		content: ""
+			/*可以神奇的弄出 | << 幹 原來這是左邊框*/
+	}
+
+	#header .drop {
+		/*子項ㄉ*/
+		transition: all .3s;
+		/*	z-index: -1;*/
+		display: none;
+		position: fixed;
+		flex-direction: row;
+		justify-content: center;
+		/*	align-items: baseline;*/
+		padding: 1vh 0;
+		width: 100vw;
+		/*	height: 5rem;*/
+		/* flag */
+		top: var(--drop-top);
+		left: 0;
+		box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
+		/* ^ 子項最底下的線*/
+		background: #f4f4f4;
+	}
+
+	#header .position {
+		margin-right: 6vw;
+		color: #1f2623;
+	}
+
+	#header .position-header {
+		display: flex;
+		/*	align-items: center;*/
+	}
+
+	#header .position-header > h4 {
+		margin-right: 1vw;
+		font-size: 16px;
+	}
+
+
+	#header svg {
+		width: 12px;
+		height: 12px;
+		fill: currentColor;
+	}
+
+	#header svg:hover {
+		width: 12px;
+		height: 12px;
+		fill: currentColor;
+	}
+
+
+	#header .position > h2 {
+		font-size: 24px;
+	}
+
+	#header .drop > li {
+		/*子項寬度*/
+		margin: 0 1vw;
+		display: flex;
+		position: relative;
+		color: #282828;
+		transition: all .2s;
+		opacity: 0;
+
+	}
+
+	#header .drop > li:hover {
+		color: #ab6e4d;
+	}
+
+	#header .drop > li a {
+		padding: 1vh 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: inherit;
+		font-size: 14px
+	}
+
+	#header li:hover .drop li:nth-of-type(1) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 0.2s;
+	}
+
+	#header li:hover .drop li:nth-of-type(2) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 0.4s;
+	}
+
+	#header li:hover .drop li:nth-of-type(3) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 0.6s;
+	}
+
+	#header li:hover .drop li:nth-of-type(4) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 0.8s;
+	}
+
+	#header li:hover .drop li:nth-of-type(5) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 1.0s;
+	}
+
+	#header li:hover .drop li:nth-of-type(6) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 1.2s;
+	}
+
+	#header li:hover .drop li:nth-of-type(7) {
+		animation: drop 0.2s ease-in-out forwards;
+		animation-delay: 1.4s;
+	}
+
+	@keyframes drop {
+		from {
+			opacity: 0;
+			transform: translateX(30px) rotateY(90deg);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateX(0) rotateY(0);
+		}
+	}
+
+	#nav > ul > li > ul > li a span {
+		text-align: center;
+		display: flex;
+		justify-content: center
+	}
+
 }
 
 
-#Logo {
-    float: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
+@media screen and (max-width: 874px) {
+	#main {
+		overflow-x: hidden;
+		width: 100wh;
+		min-height: 100vh;
+		display: flex;
+		position: relative;
+		flex-direction: column;
+		overflow: hidden;
+		align-items: center;
+	}
 
 
-#header {
-    display: flex;
-    /*	z-index: 1000;*/
-    position: relative;
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+	#Logo {
+		display: none;
+		height: 100vh;
+	}
 
-#header .menu {
-    /*	z-index: 2;*/
-    width: 100%;
-    height: 4rem;
-    /*母bar的長度*/
-    display: flex;
-    position: fixed;
-    top: var(--menu-top, 0);
-    flex-direction: row;
-    justify-content: center;
-    transition: all .3s;
-    background: #fff;
-    color: #fff;
-    /*母項字顏色*/
-    /*	opacity: 0;*/
-    pointer-events: none;
-    z-index: 1000;
-    box-shadow: 0px 0px 20px 0px #a6a6a6;
-}
+	#header {
+		/*		height: 100vh;*/
+		/*		width: 100vw;*/
+		/*		background: red;*/
+		display: flex;
+		/*		 flex-direction: column; */
+		/*		align-content: center;*/
+		/*		flex-direction: column;*/
+		overflow: hidden;
+		/*		align-items: center;*/
+		justify-content: center;
+		z-index: 1000;
+	}
+
+	#nav {
+/*		padding-top: 90px;*/
+		height: 100vh;
+		width: -100vw;
+		/*		transition: all 0.1s ease-in-out;*/
+		display: none;
+		margin-left: 50%;
+	}
+
+	#nav.is-active {
+		background: #f4f4f4;
+/*		padding-top: 90px;*/
+		display: block;
+		position: fixed;
+		width: 50vw;
+		height: 100vh;
+		/*		transition: all 0.1s ease-in-out;*/
+		margin-left: 25%;
+	}
+	
+	#nav .menu-logo {
+		height: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#nav > ul {
+		width: 50vw;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#nav > ul > li {
+		width: 100%;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 12px 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#nav > ul > li.is-active {
+		background: #fff;
+		/*		width: 100%;*/
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 12px 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#nav > ul > li > a {
+		height: 100%;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+	}
+
+	#nav > ul > li > a > span.icon {
+		padding-left: 10px;
+		width: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: all 0.1s ease-in-out;
+	}
+
+	#nav > ul > li.is-active > a > span.icon {
+		padding-left: 10px;
+		width: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transform: rotate(90deg);
+		transition: all 0.1s ease-in-out;
+	}
+
+	#nav .icon > svg {
+		width: 16px;
+		height: 16px;
+		fill: currentColor;
+	}
+
+	/*
+	#nav svg:hover {
+		width: 16px;
+		height: 16px;
+		fill: currentColor;
+		color: #fafafa;
+	}
+*/
+
+	#nav > ul > li > a > span {
+		padding-left: 15%;
+		color: #282828;
+	}
+
+	#nav > ul > li.is-active > a > span {
+		padding-left: 15%;
+		color: #AB6E4D;
+	}
+
+	#nav > ul > li:hover > a > span {
+		color: #AB6E4D;
+	}
+
+	#nav > ul > li > ul {
+		display: none;
+	}
+
+	#nav > ul > li.is-active > ul {
+		display: block;
+		padding: 12px 0 0 1em;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#nav > ul > li > ul > li {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: 5px 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	#nav > ul > li > ul > li > a {
+		text-decoration: none;
+	}
+
+	#nav > ul > li > ul > li > a > span {
+		padding-left: 15%;
+		color: #282828;
+	}
+
+	#nav > ul > li > ul > li:hover > a > span {
+		color: #AB6E4D;
+	}
 
 
-#header .menu.is-child {
-    pointer-events: auto;
-    opacity: 1;
-}
-
-#header .menu > ul {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
-    background-color: #666c70;
-    /*青色bar*/
-}
-
-#header .menu > ul > li {
-    min-width: 7rem;
-    /*母選項寬度*/
-    height: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    /*    box-sizing: border-box; 好像沒作用*/
-}
-
-@media screen and (min-width: 769px) {
-
-    #header .menu > ul > li:hover {
-        transition: all .3s;
-        color: #ab6e4d;
-        background-color: #666c70
-    }
-
-    #header .menu > ul > li:hover > ul {
-        transition: all .3s;
-        display: flex;
-    }
-}
-
-#header .menu > ul > li > a {
-    /*	z-index: 0;*/
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px
-}
-
-#header .menu > ul > li:first-child > a:before {
-    border-color: transparent;
-}
-
-/*去掉第一條 | */
-
-#header .menu > ul > li > a:before {
-    /*母項ㄉ*/
-    /*	z-index: -1;*/
-    width: 100%;
-    height: 1.2rem;
-    position: absolute;
-    box-sizing: border-box;
-    border-left: 1px solid rgba(40, 40, 40, .5);
-    content: ""
-    /*可以神奇的弄出 | << 幹 原來這是左邊框*/
-}
-
-#header .drop {
-    /*子項ㄉ*/
-    transition: all .3s;
-    /*	z-index: -1;*/
-    display: none;
-    position: fixed;
-    flex-direction: row;
-    justify-content: center;
-    /*	align-items: baseline;*/
-    padding: 1vh 0;
-    width: 100vw;
-    /*	height: 5rem;*/
-    /* flag */
-    top: var(--drop-top);
-    left: 0;
-    box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, .5);
-    /* ^ 子項最底下的線*/
-    background: #f4f4f4;
-}
-
-#header .position {
-    margin-right: 6vw;
-    color: #1f2623;
-}
-
-#header .position-header {
-    display: flex;
-    /*	align-items: center;*/
-}
-
-#header .position-header > h4 {
-    margin-right: 1vw;
-    font-size: 16px;
-}
+	/* ------- icon -------*/
+	#moblie-icon {
+		/* width: 100%; */
+		/* max-width: 940px; */
+		/*	margin: 0 auto;*/
+		position: relative;
+		/*		text-align: center;*/
+		padding-top: 20px;
+		padding-left: 85%;
+		/* box-sizing: border-box; */
+		/*	background-color: #2c3e50;*/
+		position: fixed;
+		/*		justify-content: flex-start;*/
+		transition: all 0.3s ease-in-out;
+	}
 
 
-#header svg {
-    width: 12px;
-    height: 12px;
-    fill: currentColor;
-}
+	#moblie-icon.is-active {
+		/* width: 100%; */
+		/* max-width: 940px; */
+		/*	margin: 0 auto;*/
+		/* position: relative; */
+		text-align: center;
+		padding: 20px 9vh 0 0;
+		/* box-sizing: border-box; */
+		/*	background-color: #2c3e50;*/
+		position: fixed;
+		/*		margin: 50vw;*/
+		transition: all 0.3s ease-in-out;
+	}
 
-#header svg:hover {
-    width: 12px;
-    height: 12px;
-    fill: currentColor;
-}
 
 
-#header .position > h2 {
-    font-size: 24px;
-}
+	#container {
+		width: 40px;
+		height: 40px;
+		transition: all 0.3s ease-in-out;
+		/*	padding: 1vh 1vw;*/
+		background-color: #fff;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		box-shadow: 1pt 1pt 5pt rgba(40, 40, 40, .3);
+	}
 
-#header .drop > li {
-    /*子項寬度*/
-    margin: 0 1vw;
-    display: flex;
-    position: relative;
-    color: #282828;
-    transition: all .2s;
-    opacity: 0;
 
-}
+	/* #container.is-active {
+	width: 40px;
+	height: 40px;
+	margin-left: 70%;
+	transition: all 0.3s ease-in-out;
+} */
 
-#header .drop > li:hover {
-    color: #ab6e4d;
-}
+	#header .line {
+		width: 20px;
+		height: 3px;
+		background-color: #222;
+		display: block;
+		margin: 3px auto;
+		transition: all 0.3s ease-in-out;
+	}
 
-#header .drop > li a {
-    padding: 1vh 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    font-size: 14px
-}
+	#icon1:hover,
+	#icon2:hover {
+		cursor: pointer;
+	}
 
-#header li:hover .drop li:nth-of-type(1) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 0.2s;
-}
+	#icon1 {
+		display: none;
+		position: relative;
+		transition: all 0.3s ease-in-out;
+	}
 
-#header li:hover .drop li:nth-of-type(2) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 0.4s;
-}
+	#icon1.is-active {
+		display: block;
+	}
 
-#header li:hover .drop li:nth-of-type(3) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 0.6s;
-}
 
-#header li:hover .drop li:nth-of-type(4) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 0.8s;
-}
+	#icon2 {
+		display: none;
+		transform: rotate(45deg);
+		transition: all 0.3s ease-in-out;
+	}
 
-#header li:hover .drop li:nth-of-type(5) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 1.0s;
-}
+	#icon2.is-active {
+		display: block;
+		transform: rotate(45deg);
+		transition: all 0.3s ease-in-out;
+	}
 
-#header li:hover .drop li:nth-of-type(6) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 1.2s;
-}
+	#icon2:before {
+		content: "";
+		position: absolute;
+		box-sizing: border-box;
+		width: 40px;
+		height: 40px;
+		/*	border: 3px solid transparent;*/
+		top: calc(50% - 20px);
+		left: calc(50% - 20px);
+		border-radius: 100%;
+		transition: all 0.3s ease-in-out;
+	}
 
-#header li:hover .drop li:nth-of-type(7) {
-    animation: drop 0.2s ease-in-out forwards;
-    animation-delay: 1.4s;
-}
+	#icon2 .line {
+		width: 20px;
+	}
 
-@keyframes drop {
-    from {
-        opacity: 0;
-        transform: translateX(30px) rotateY(90deg);
-    }
+	#icon2 .line:nth-child(2) {
+		opacity: 0;
+	}
 
-    to {
-        opacity: 1;
-        transform: translateX(0) rotateY(0);
-    }
-}
+	#icon2 .line:nth-child(1) {
+		transform: translateY(6px);
+	}
 
-#header .menu > ul > li > ul > li a span {
-    text-align: center;
-}
-
-#header .menu > ul > li > ul > li a span {
-    display: flex;
-    justify-content: center
+	#icon2 .line:nth-child(3) {
+		transform: translateY(-6px) rotate(90deg);
+	}
 }
 
 
 #footer {
-    padding: 1%;
-    display: flex;
-    width: 100%;
-    /*	max-width: 100vw;*/
-    height: 80px;
-    box-sizing: border-box;
-    background-color: #666c70;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	padding: 1%;
+	display: flex;
+	width: 100%;
+	/*	max-width: 100vw;*/
+	height: 80px;
+	box-sizing: border-box;
+	background-color: #666c70;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 
 #footer svg {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
 }
 
 #footer svg:hover {
-    width: 16px;
-    height: 16px;
-    fill: currentColor;
-    color: #fafafa;
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+	color: #fafafa;
 }
 
 #footer .icon {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 #footer .person {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 
 #footer .person-list:first-child {
-    border-color: transparent;
+	border-color: transparent;
 }
 
 #footer .person-list {
-    padding-left: 5px;
-    padding-right: 5px;
-    display: flex;
-    flex-direction: row;
-    border-left: 1px solid rgba(40, 40, 40, .5);
-    content: ""
+	padding-left: 5px;
+	padding-right: 5px;
+	display: flex;
+	flex-direction: row;
+	border-left: 1px solid rgba(40, 40, 40, .5);
+	content: ""
 }
 
 #footer .icon-list {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 
 #footer p {
-    color: black;
-    font-size: 14px;
-    padding: 0;
+	color: rgba(244, 244, 244, .8);
+	font-size: 14px;
+	padding: 0;
 }
 
 #footer a {
-    font-size: 14px;
-    padding: 0;
-    color: black;
+	font-size: 14px;
+	padding: 0;
+	color: rgba(244, 244, 244, .8);
 }
 
 
 #footer a:hover {
-    color: #fafafa;
+	color: #fafafa;
 }
