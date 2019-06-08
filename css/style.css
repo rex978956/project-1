@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese);
-@import url(https://fonts.googleapis.com/css?family=Noto+Serif);
+@import url(https: //fonts.googleapis.com/css?family=Noto+Sans+TC:400,500&subset=chinese-traditional,japanese);
+@import url(https: //fonts.googleapis.com/css?family=Noto+Serif);
 
 
 :root {
@@ -102,8 +102,8 @@ h3 {
 		pointer-events: auto;
 		opacity: 1;
 	}
-	
-	#nav .menu-logo{
+
+	#nav .menu-logo {
 		display: none;
 	}
 
@@ -340,25 +340,25 @@ h3 {
 	}
 
 	#nav {
-/*		padding-top: 90px;*/
+		/*		padding-top: 90px;*/
 		height: 100vh;
-		width: -100vw;
-		/*		transition: all 0.1s ease-in-out;*/
+/*		width: -100vw;*/
+		transition: all 0.3s ease-in-out;
 		display: none;
 		margin-left: 50%;
 	}
 
 	#nav.is-active {
 		background: #f4f4f4;
-/*		padding-top: 90px;*/
+		/*		padding-top: 90px;*/
 		display: block;
 		position: fixed;
 		width: 50vw;
 		height: 100vh;
-		/*		transition: all 0.1s ease-in-out;*/
+		transition: all 0.3s ease-in-out;
 		margin-left: 25%;
 	}
-	
+
 	#nav .menu-logo {
 		height: 90px;
 		display: flex;
