@@ -171,11 +171,11 @@ h3 {
 		content: ""
 			/*可以神奇的弄出 | << 幹 原來這是左邊框*/
 	}
-	
+
 	#nav > ul > li > a > span.icon {
 		display: none;
 	}
-	
+
 
 	#header .drop {
 		/*子項ㄉ*/
@@ -346,7 +346,7 @@ h3 {
 	#nav {
 		/*		padding-top: 90px;*/
 		height: 100vh;
-/*		width: -100vw;*/
+		/*		width: -100vw;*/
 		transition: all 0.3s ease-in-out;
 		display: none;
 		margin-left: 50%;
@@ -396,6 +396,7 @@ h3 {
 		flex-direction: column;
 		padding: 12px 0;
 		transition: all 0.3s ease-in-out;
+		box-shadow: 0 2pt 2pt -2pt rgba(40, 40, 40, 0.5);
 	}
 
 	#nav > ul > li > a {
