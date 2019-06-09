@@ -5,12 +5,19 @@
 #article {
 	display: flex;
 	/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
-	/*	margin: 1vw;*/
+	margin: 1vw;
 	align-items: center;
 	flex-direction: column;
-	margin-top: 4rem;
-	width: 70vw;
+	margin-top: 3rem;
+	width: 75vw;
 }
+
+@media screen and (max-width: 620px) {
+	#article {
+		width: 95vw;
+	}
+}
+
 
 #article .header {
 	display: flex;
@@ -19,17 +26,16 @@
 
 #article .header h1 {
 	border-bottom: solid 2px #1caa5d;
-	margin: 5vh 0 0 0;
+	margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
-	font-size: 35px;
-	margin-top: 3vh;
+	margin-top: 6vh;
 	margin-bottom: 3vh;
+	border-bottom: solid 2px #222;
 }
 
 #article h3 {
-	font-size: 30px;
 	margin-top: 4vh;
 	margin-bottom: 2vh;
 }
@@ -47,7 +53,44 @@
 	border-radius: 10px;
 }
 
+#lab .content {
+	display: flex;
+	flex-direction: column;
+}
 
+
+#lab > h3 {
+	color: #AB6E4D;
+}
+
+#lab .content > div {
+	display: flex;
+	justify-content: center;
+}
+
+#lab .content > div > p {
+	margin: 0 1vw;
+	border-bottom: solid 1px #1caa5d;
+}
+
+#lab .link {
+	width: 100%;
+	text-align: right;
+	margin-top: 2vh;
+	padding-right: 3vw;
+}
+
+#lab .link > a {
+	color: #AB6E4D;
+	text-decoration: none;
+	border-bottom: solid 1px #AB6E4D;
+}
+
+#lab .icon > svg {
+	width: 11px;
+	height: 11px;
+	fill: currentColor;
+}
 
 #coursesTable {
 	display: flex;
@@ -268,14 +311,15 @@
 	}
 
 	#article .intro {
-		padding: 5vw;
+		width: 90vw;
+		padding: 1vh 0 2vh 0;
 		display: flex;
 		align-items: center;
 		flex-direction: column-reverse;
 		box-shadow: 0px 0px 50px 0px #b7b7b7;
 		border-radius: 10px;
 		margin-bottom: 5vh;
-		margin-top: 3vh;
+		margin-top: 5vh;
 	}
 
 	#article h4 {
@@ -289,6 +333,20 @@
 	#article .sticker {
 		margin: 3vh 0;
 	}
+
+
+	#lab {
+		width: 90vw;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 2vh 2vw 4vh 2vw;
+		padding: 3vh 0;
+		box-shadow: 0px 0px 50px 0px #b7b7b7;
+		border-radius: 10px;
+	}
+
 
 	#coursesTable .Courses-content li div {
 		font-size: 8px;
@@ -309,5 +367,27 @@
 		color: #f00;
 		font-weight: bold;
 		font-size: 8px;
+	}
+
+	#lab .link {
+	padding-right: 5vw;
+}
+}
+
+@media screen and (max-width: 876px) {
+
+	#lab > h3 {
+		font-size: 23px;
+		color: #AB6E4D;
+	}
+
+	#lab .content > div {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	#lab .content > div > p {
+		margin: 0 10vw;
 	}
 }
