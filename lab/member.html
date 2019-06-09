@@ -2,183 +2,108 @@
 <html lang="zh-Hant-TW">
 
 <head>
-	<meta charset="UTF-8"/>
-	<meta content="width=device-width, initial-scale=1" name="viewport"/>
+	<meta charset="UTF-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<title>實驗室成員介紹</title>
-	<link href="./css/member.css" rel="stylesheet"/>
-	<link href="../css/style.css" rel="stylesheet"/>
+	<link href="./css/member.css" rel="stylesheet" />
+	<link href="../css/style.css" rel="stylesheet" />
 	<script src="../js/vue.min.js"></script>
 	<script src="../js/main.js"></script>
 </head>
 
 <body>
-<div id="main">
-	<div id="wsite">
-		<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"/></a>
+	<div id="main">
+		<div id="wsite">
+			<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg" /></a>
+		</div>
+		<header id="header" v-html="header"></header>
+		<article id="article">
+			<div class="header">
+				<h1>實驗室成員介紹</h1>
+			</div>
+			<div class="content">
+				<div class="degree">
+					<h2>碩士班</h2>
+					<div class="deglist">
+						<h3>碩士在校生</h3>
+						<ol class="counter">
+							<li><span>徐武駿 (碩二)</span></li>
+							<li><span>藍志銘 (碩二</span></li>
+							<li><span>麥紘維 (碩一)</span></li>
+							<li><span>卓傳衛 (碩一)</span></li>
+						</ol>
+					</div>
+					<div class="deglist">
+						<h3>碩士畢業生</h3>
+						<ol class="counter">
+							<li><span>簡祥宸 (2018.6畢)</span></li>
+							<li><span>陳怡君 (2018.6畢)(五年一貫)</span></li>
+							<li><span>黃典涵 (2017.6 畢)</span></li>
+							<li><span>王崇銘 (2017.6 畢)</span></li>
+							<li><span>許瑞育 (2017.6 畢)</span></li>
+							<li><span>李冠穎 (2016.6 畢) / 第一份工作: e7.net / 1篇國內會議論文</span></li>
+							<li><span>王敬言 (2016.6 畢) / 第一份工作: / 1篇國際期刊論文</span></li>
+							<li><span>林言霈 (2015.6 畢) / 第一份工作: 訊真科技 / 1篇國際期刊論文 / 1篇國內會議論文</span></li>
+							<li><span>楊書瑋 (2015.6 畢) / 第一份工作: 精英 / 1篇國際期刊論文 / 1篇國內會議論文 </span></li>
+							<li><span>呂子修 (2015.6 畢) / 第一份工作: 華冠 / 1篇國際期刊論文 / 1篇國內期刊論文 / 3篇國內會議論文</span></li>
+							<li><span>李奕勳 (2014.6 畢) / 第一份工作: 華冠/ 1篇國際期刊論文 / 1篇國際會議論文 / 2篇國內會議論文</span></li>
+							<li><span>林學偉 (2014.6 畢) / 第一份工作: 宏達電 / 1篇國際期刊論文 / 3篇國內會議論文</span></li>
+							<li><span>劉炳麟 (2013.6 畢) / 第一份工作: 大聯大集團 / 2篇國際期刊論文 / 2篇國際會議論文 / 2篇國內會議論文</span></li>
+						</ol>
+					</div>
+				</div>
+				<div class="degree">
+					<h2>大學部專題生</h2>
+					<div class="deglist">
+						<h3>2017年畢業</h3>
+						<ol class="counter">
+							<li><span>林士彰 (科技部大專生計畫: 利用網路爬蟲與機器學習技術實做公益資訊整合平台), 楊智傑, 林益田, 林冠偉, 王承輝</span></li>
+							<li><span>劉奕廷, 陳雅玲</span></li>
+							<li><span>廖禹宬, 吳偉銘, 葉加煊</span></li>
+							<li><span>劉俊宏, 徐武駿</span></li>
+							<li><span>陳家語, 沈祐慧</span></li>
+						</ol>
+					</div>
+					<div class="deglist">
+						<h3>2016年畢業</h3>
+						<ol class="counter">
+							<li><span>王崇銘</span></li>
+							<li><span>林君龍 (科技部大專生計畫: 使用MVC架構實現折價券交換平台系統, 甄試錄取清大資工所, 104學年度淡江優秀青年)</span></li>
+							<li><span>李佳玟</span></li>
+							<li><span>許瑞育</span></li>
+							<li><span>謝孟珈 (科技部大專生計畫: 檔案相片日誌分享應用設計與實作)</span></li>
+							<li><span>林佳鴻, 盧明正, 廖哲志, 陳逸甫, 林承叡, 許稟承</span></li>
+							<li><span>林宗毅, 陳姿妤, 蔡黛淵, 高資淳, 陳慧慈</span></li>
+							<li><span>王子銘, 曾偉豪, 鄭宇翔, 馮建軒, 謝哲睿, 張智凱, 謝旭棠</span></li>
+						</ol>
+					</div>
+					<div class="deglist">
+						<h3>2015年畢業</h3>
+						<ol class="counter">
+							<li><span>林則言 (甄試錄取交大資工所), 王冠升, 許竣翔</span></li>
+							<li><span>陳喡翰 (甄試錄取中央資工所), 鄭弘駿</span></li>
+							<li><span>陳裕軒, 楊昀凱, 陳俊傑 (國科會大專生計畫: 智慧插座用於家電控制之設計與實做, 甄試錄取清大資工所)</span></li>
+						</ol>
+					</div>
+					<div class="deglist">
+						<h3>2014年畢業</h3>
+						<ol class="counter">
+							<li><span>高祺軒, 張哲凱, 任健榮, 王敬言</span></li>
+							<li><span>林學灝 (國科會大專生計畫: 適用於智慧型手機之 Dead Reckoning 演算法設計與實做, 甄試錄取中正資工所)</span></li>
+						</ol>
+					</div>
+					<div class="deglist">
+						<h3>2013年畢業</h3>
+						<ol class="counter">
+							<li><span>冉光永, 陳則翔, 曾斐筠, 林煒晟, 莊皓鈞, 李健泰, 張予薰, 詹淑君</span></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+		</article>
+		<footer id="footer" v-html="footer"></footer>
 	</div>
-
-	<header id="header">
-		<div class="menu is-child" id="nav">
-			<ul>
-				<li>
-					<a href="../index.html">
-						<span>首頁</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>實驗室</span>
-					</a>
-					<ul class="drop">
-						<div class="position">
-							<div class="position-header">
-								<h4>實驗室</h4>
-								<svg viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg">
-									<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-										  fill="currentColor"></path>
-								</svg>
-							</div>
-							<h2>實驗室成員介紹</h2>
-						</div>
-						<li>
-							<a href="./introduction.html"><span>實驗室介紹</span></a>
-						</li>
-						<li>
-							<a href="#"><span>實驗室成員介紹</span></a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">
-						<span>指導教授</span>
-					</a>
-					<ul class="drop">
-						<li><a href="../advisor/bio.html"><span>簡歷</span></a></li>
-						<li><a href="../advisor/experience.html"><span>工作經歷</span></a></li>
-						<li><a href="../advisor/services.html"><span>學術服務</span></a></li>
-						<li><a href="../advisor/award.html"><span>獲獎紀錄</span></a></li>
-						<li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
-						</li>
-						<li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en"
-							   title="GoogleScholarCitation"><span>GSC</span></a></li>
-						<li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
-					</ul>
-				</li>
-				<li>
-					<a href="../course/course.html">
-						<span>開設課程</span>
-					</a>
-				</li>
-				<li>
-					<a href="../projects/projects.html">
-						<span>研究計畫</span>
-					</a>
-				</li>
-				<li>
-					<a href="../publication/publication.html">
-						<span>研究成果</span>
-					</a>
-				</li>
-				<li>
-					<a href="../awards/awards.html">
-						<span>榮譽事項</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<span>聯絡我們</span>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</header>
-	<article id="article">
-		<div class="header">
-			<h1>實驗室成員介紹</h1>
-		</div>
-		<div class="content">
-			<div class="degree">
-				<h2>碩士班</h2>
-				<div class="deglist">
-					<h3>碩士在校生</h3>
-					<ol class="counter">
-						<li><span>徐武駿 (碩二)</span></li>
-						<li><span>藍志銘 (碩二</span></li>
-						<li><span>麥紘維 (碩一)</span></li>
-						<li><span>卓傳衛 (碩一)</span></li>
-					</ol>
-				</div>
-				<div class="deglist">
-					<h3>碩士畢業生</h3>
-					<ol class="counter">
-						<li><span>簡祥宸 (2018.6畢)</span></li>
-						<li><span>陳怡君 (2018.6畢)(五年一貫)</span></li>
-						<li><span>黃典涵 (2017.6 畢)</span></li>
-						<li><span>王崇銘 (2017.6 畢)</span></li>
-						<li><span>許瑞育 (2017.6 畢)</span></li>
-						<li><span>李冠穎 (2016.6 畢) / 第一份工作: e7.net / 1篇國內會議論文</span></li>
-						<li><span>王敬言 (2016.6 畢) / 第一份工作: / 1篇國際期刊論文</span></li>
-						<li><span>林言霈 (2015.6 畢) / 第一份工作: 訊真科技 / 1篇國際期刊論文 / 1篇國內會議論文</span></li>
-						<li><span>楊書瑋 (2015.6 畢) / 第一份工作: 精英 / 1篇國際期刊論文 / 1篇國內會議論文 </span></li>
-						<li><span>呂子修 (2015.6 畢) / 第一份工作: 華冠 / 1篇國際期刊論文 / 1篇國內期刊論文 / 3篇國內會議論文</span></li>
-						<li><span>李奕勳 (2014.6 畢) / 第一份工作: 華冠/ 1篇國際期刊論文 / 1篇國際會議論文 / 2篇國內會議論文</span></li>
-						<li><span>林學偉 (2014.6 畢) / 第一份工作: 宏達電 / 1篇國際期刊論文 / 3篇國內會議論文</span></li>
-						<li><span>劉炳麟 (2013.6 畢) / 第一份工作: 大聯大集團 / 2篇國際期刊論文 / 2篇國際會議論文 / 2篇國內會議論文</span></li>
-					</ol>
-				</div>
-			</div>
-			<div class="degree">
-				<h2>大學部專題生</h2>
-				<div class="deglist">
-					<h3>2017年畢業</h3>
-					<ol class="counter">
-						<li><span>林士彰 (科技部大專生計畫: 利用網路爬蟲與機器學習技術實做公益資訊整合平台), 楊智傑, 林益田, 林冠偉, 王承輝</span></li>
-						<li><span>劉奕廷, 陳雅玲</span></li>
-						<li><span>廖禹宬, 吳偉銘, 葉加煊</span></li>
-						<li><span>劉俊宏, 徐武駿</span></li>
-						<li><span>陳家語, 沈祐慧</span></li>
-					</ol>
-				</div>
-				<div class="deglist">
-					<h3>2016年畢業</h3>
-					<ol class="counter">
-						<li><span>王崇銘</span></li>
-						<li><span>林君龍 (科技部大專生計畫: 使用MVC架構實現折價券交換平台系統, 甄試錄取清大資工所, 104學年度淡江優秀青年)</span></li>
-						<li><span>李佳玟</span></li>
-						<li><span>許瑞育</span></li>
-						<li><span>謝孟珈 (科技部大專生計畫: 檔案相片日誌分享應用設計與實作)</span></li>
-						<li><span>林佳鴻, 盧明正, 廖哲志, 陳逸甫, 林承叡, 許稟承</span></li>
-						<li><span>林宗毅, 陳姿妤, 蔡黛淵, 高資淳, 陳慧慈</span></li>
-						<li><span>王子銘, 曾偉豪, 鄭宇翔, 馮建軒, 謝哲睿, 張智凱, 謝旭棠</span></li>
-					</ol>
-				</div>
-				<div class="deglist">
-					<h3>2015年畢業</h3>
-					<ol class="counter">
-						<li><span>林則言 (甄試錄取交大資工所), 王冠升, 許竣翔</span></li>
-						<li><span>陳喡翰 (甄試錄取中央資工所), 鄭弘駿</span></li>
-						<li><span>陳裕軒, 楊昀凱, 陳俊傑 (國科會大專生計畫: 智慧插座用於家電控制之設計與實做, 甄試錄取清大資工所)</span></li>
-					</ol>
-				</div>
-				<div class="deglist">
-					<h3>2014年畢業</h3>
-					<ol class="counter">
-						<li><span>高祺軒, 張哲凱, 任健榮, 王敬言</span></li>
-						<li><span>林學灝 (國科會大專生計畫: 適用於智慧型手機之 Dead Reckoning 演算法設計與實做, 甄試錄取中正資工所)</span></li>
-					</ol>
-				</div>
-				<div class="deglist">
-					<h3>2013年畢業</h3>
-					<ol class="counter">
-						<li><span>冉光永, 陳則翔, 曾斐筠, 林煒晟, 莊皓鈞, 李健泰, 張予薰, 詹淑君</span></li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</article>
-	<footer id="footer" v-html="footer"></footer>
-</div>
-<script src="../js/index.vue.js"></script>
+	<script src="../js/index.vue.js"></script>
 </body>
 
 </html>

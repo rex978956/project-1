@@ -14,77 +14,7 @@
 <body>
 <div id="main">
     <a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
-    <header id="header">
-        <div class="menu is-child" id="nav">
-            <ul>
-                <li>
-                    <a href="../index.html">
-                        <span>首頁</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#實驗室">
-                        <span>實驗室</span>
-                    </a>
-                    <ul class="drop">
-                        <li><a href="../lab/introduction.html"><span>實驗室介紹</span></a></li>
-                        <li><a href="../lab/member.html"><span>實驗室成員介紹</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#指導教授">
-                        <span>指導教授</span>
-                    </a>
-                    <ul class="drop">
-                        <div class="position">
-                            <div class="position-header">
-                                <h4>指導教授</h4>
-                                <svg viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
-                                          fill="currentColor"></path>
-                                </svg>
-                            </div>
-                            <h2>獲獎紀錄</h2>
-                        </div>
-                        <li><a href="./bio.html"><span>簡歷</span></a></li>
-                        <li><a href="./experience.html"><span>工作經歷</span></a></li>
-                        <li><a href="./services.html"><span>學術服務</span></a></li>
-                        <li><a href="./award.html"><span>獲獎紀錄</span></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCbg3RaqCueuYPjaZFc85oCA"><span>成果展示影片</span></a>
-                        </li>
-                        <li><a href="http://scholar.google.com.tw/citations?user=CQ8XgSsAAAAJ&hl=en"
-                               title="GoogleScholarCitation"><span>GSC</span></a></li>
-                        <li><a href="http://orcid.org/0000-0002-2596-7977"><span>ORCID</span></a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="../course/course.html">
-                        <span>開設課程</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../projects/projects.html">
-                        <span>研究計畫</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../publication/publication.html">
-                        <span>研究成果</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="../awards/awards.html">
-                        <span>榮譽事項</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>聯絡我們</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+    <header id="header" v-html="header"></header>
     <article id="article">
         <div class="header">
             <h1>獲獎紀錄</h1>

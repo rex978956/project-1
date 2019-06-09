@@ -24,29 +24,26 @@ window.addEventListener('scroll', function (e) {
 	ticking = true;
 });
 
-//var s = document.getElementsByTagName("h1");
-//console.log(document.getElementsByTagName("h1")[0].innerText);
-
 
 window.onload = function () {
 	document.querySelector('.container').addEventListener('click', toggleMenu);
 
 	/* ------ menu li ------ */
-	document.querySelector('#menuHome').addEventListener('click', toggleHome);
+	document.querySelector('#menuHome>a>.icon').addEventListener('click', toggleHome);
 
-	document.querySelector('#menuLab').addEventListener('click', toggleLab);
+	document.querySelector('#menuLab>a').addEventListener('click', toggleLab);
 
-	document.querySelector('#menuAdvisor').addEventListener('click', toggleAdvisor);
+	document.querySelector('#menuAdvisor>a').addEventListener('click', toggleAdvisor);
 
-	document.querySelector('#menuCourse').addEventListener('click', toggleCourse);
+	document.querySelector('#menuCourse>a>.icon').addEventListener('click', toggleCourse);
 
-	document.querySelector('#menuProjects').addEventListener('click', toggleProjects);
+	document.querySelector('#menuProjects>a>.icon').addEventListener('click', toggleProjects);
 
-	document.querySelector('#menuPublication').addEventListener('click', togglePublication);
+	document.querySelector('#menuPublication>a>.icon').addEventListener('click', togglePublication);
 
-	document.querySelector('#menuAwards').addEventListener('click', toggleAwards);
+	document.querySelector('#menuAwards>a>.icon').addEventListener('click', toggleAwards);
 
-	document.querySelector('#menuContact').addEventListener('click', toggleContact);
+	document.querySelector('#menuContact>a>.icon').addEventListener('click', toggleContact);
 
 
 }
@@ -59,6 +56,7 @@ function toggleHome(event) {
 }
 
 function toggleLab(event){
+	console.log("l")
 	event.preventDefault();	
 	const liItem = new Item('#nav>ul>li', '#menuLab', 'is-active');
 	liItem.toggle();
@@ -69,6 +67,13 @@ function toggleAdvisor(event){
 	const liItem = new Item('#nav>ul>li', '#menuAdvisor', 'is-active');
 	liItem.toggle();
 }
+
+function toggleCourse(event){
+	event.preventDefault();	
+	const liItem = new Item('#nav>ul>li', '#menuCourse', 'is-active');
+	liItem.toggle();
+}
+
 
 function toggleProjects(event){
 	event.preventDefault();	
@@ -140,14 +145,15 @@ class Item {
 		for (var i = 0; i < this.DOMlist.length; i++) {
 			if (this.DOMlist[i].classList.contains(this.activeClassName) && this.DOMlist[i] !== this.target)
 				this.DOMlist[i].classList.remove(this.activeClassName);
-			console.log(this.DOMlist[i]);
+//			console.log(this.DOMlist[i]);
 		}
-		
-		if(!this.target.classList.contains(this.activeClassName))
-			this.target.classList.add(this.activeClassName);
-//		this.target.classList.contains(this.activeClassName) ?
-//			this.target.classList.remove(this.activeClassName) :
+//		
+//		if(!this.target.classList.contains(this.activeClassName))
 //			this.target.classList.add(this.activeClassName);
+		
+		this.target.classList.contains(this.activeClassName) ?
+			this.target.classList.remove(this.activeClassName) :
+			this.target.classList.add(this.activeClassName);
 	}
 
 	isActive() {

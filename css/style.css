@@ -130,7 +130,6 @@ h3 {
 	}
 
 
-
 	#nav > ul > li:hover {
 		transition: all .3s;
 		color: #ab6e4d;
@@ -172,6 +171,11 @@ h3 {
 		content: ""
 			/*可以神奇的弄出 | << 幹 原來這是左邊框*/
 	}
+	
+	#nav > ul > li > a > span.icon {
+		display: none;
+	}
+	
 
 	#header .drop {
 		/*子項ㄉ*/
