@@ -43,7 +43,7 @@
 }
 
 #article .member {
-	width: 25%;
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
@@ -60,11 +60,13 @@
 #article .member > table {
 	padding: 2px;
 	border: solid 1px #b7b7b7;
+	border-radius: 10px;
 }
 
 #article .member > table th {
 	text-align: left;
 	font-size: 20px;
+	padding-bottom: 2vh;
 }
 
 #article .member > table td {
@@ -92,3 +94,26 @@
 	color: #ab372f;
 }
 
+
+@media screen and (max-width: 875px) {
+	#article .content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#article .member {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		justify-content: center;
+		text-align: center;
+		margin: 0 1vw 2vh 1vw;
+
+	}
+
+	#article .member > table th {
+		text-align: center;
+	}
+}
