@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+	<title>關於我們</title>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta name="author" content="翁新橋 柯秉宏 梁譯升">
+	<meta name="description" content="Teacher website for Pan. In the Porject one class of TKUCSIE 2B.">
+	<link rel="icon" href="../source/favicon.png" type="image/png"/>
+	<link rel="shortcut icon" href="../source/favicon.png" type="image/png"/>
+	<link href="./css/about.css" rel="stylesheet"/>
+	<link href="../css/style.css" rel="stylesheet">
+	<script src="../js/vue.min.js"></script>
+	<script src="../js/main.js"></script>
+</head>
+
+<body>
+	<div id="main">
+		<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"></a>
+		<header id="header" v-html="header"></header>
+		<article id="article">
+			<div class="header">
+				<h1>關於我們</h1>
+			</div>
+			<div class="content">
+				<div class="business">
+					<h3>創業活動成果</h3>
+					<ol class="counter">
+						<li><span>"Babe with you 寶貝聯絡本", 2017 大學院校創新創業扎根計畫 Top maker (獲100000元補助) link 公告</span></li>
+						<li><span>"Babe with you 寶貝聯絡本", 2017 淡江大學創新創業競賽 第一 名 (獎金30000元)</span></li>
+						<li><span>"競賽直播暨賽務系統", 2018 淡江大學創新創業競賽 佳作 (獎金5000元)</span></li>
+					</ol>
+				</div>
+			</div>
+		</article>
+		<footer id="footer" v-html="footer"></footer>
+	</div>
+	<script src="../js/index.vue.js"></script>
+</body>
+
+</html>
