@@ -43,8 +43,7 @@ window.onload = function () {
 
 	document.querySelector('#menuAwards>a>.icon').addEventListener('click', toggleAwards);
 
-	document.querySelector('#menuContact>a>.icon').addEventListener('click', toggleContact);
-
+	document.querySelector('#menuAbout>a>.icon').addEventListener('click', toggleAbout);
 
 }
 
@@ -93,9 +92,9 @@ function toggleAwards(event){
 	liItem.toggle();
 }
 
-function toggleContact(event){
+function toggleAbout(event){
 	event.preventDefault();	
-	const liItem = new Item('#nav>ul>li', '#menuContact', 'is-active');
+	const liItem = new Item('#nav>ul>li', '#menuAbout', 'is-active');
 	liItem.toggle();
 }
 
