@@ -2,180 +2,192 @@
 <html lang="zh-Hant-TW">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta name="author" content="翁新橋 柯秉宏 梁譯升">
-	<meta name="description" content="Teacher website for Pan. In the Porject one class of TKUCSIE 2B.">
-	<link rel="icon" href="../source/favicon.png" type="image/png" />
-	<link rel="shortcut icon" href="../source/favicon.png" type="image/png" />
-	<title>實驗室介紹</title>
-	<link href="./css/introduction.css" rel="stylesheet" />
-	<link href="../css/style.css" rel="stylesheet" />
-	<script src="../js/vue.min.js"></script>
-	<script src="../js/main.js"></script>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="翁新橋 柯秉宏 梁譯升" name="author">
+    <meta content="Teacher website for Pan. In the Porject one class of TKUCSIE 2B." name="description">
+    <link href="../source/favicon.png" rel="icon" type="image/png"/>
+    <link href="../source/favicon.png" rel="shortcut icon" type="image/png"/>
+    <title>實驗室介紹</title>
+    <link href="./css/introduction.css" rel="stylesheet"/>
+    <link href="../css/style.css" rel="stylesheet"/>
+    <script src="../js/vue.min.js"></script>
+    <script src="../js/main.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<div id="wsite">
-			<a href="../index.html"><img id="Logo" src="../source/unnamed.jpg" /></a>
-		</div>
-		<header id="header" v-html="header"></header>
-		<article id="article">
-			<section>
-				<div class="header">
-					<h1>實驗室介紹</h1>
-				</div>
-			</section>
-			<section>
-				<div class="recruit">
-					<h2>誠徵碩士研究生專題生</h2>
-					<div id="Tab-container">
-						<span id="tab-1">1</span>
-						<span id="tab-2">2</span>
-						<span id="tab-3">3</span>
-						<span id="tab-4">4</span>
-						<span id="tab-5">5</span>
-						<span id="tab-6">6</span>
-						<div id="tab">
-							<div class="tab-content-1">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/9mT66Rso6RE"></iframe>
-							</div>
-							<div class="tab-content-2">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/wOV7CtfW944"></iframe>
-							</div>
-							<div class="tab-content-3">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/0brPJ0tKP6E"></iframe>
-							</div>
-							<div class="tab-content-4">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/GCzAALQSRHg"></iframe>
-							</div>
-							<div class="tab-content-5">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/e_LchyD73-s"></iframe>
-							</div>
-							<div class="tab-content-6">
-								<iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="1" src="https://www.youtube.com/embed/lcVqd8x1saU"></iframe>
-							</div>
-							<ul>
-								<li><a href="#tab-1">1</a></li>
-								<li><a href="#tab-2">2</a></li>
-								<li><a href="#tab-3">3</a></li>
-								<li><a href="#tab-4">4</a></li>
-								<li><a href="#tab-5">5</a></li>
-								<li><a href="#tab-6">6</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div class="research">
-					<h2>研究領域</h2>
-					<div class="project">
-						<h3>A. 通訊協定與系統整合</h3>
-						<ul class="keyword">
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/lte.jpg">
-								<div class="keyword-cell-txt"><span>LTE</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/wifi-direct.jpg">
-								<div class="keyword-cell-txt"><span>Wi-Fi direct</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/ZigBee.png">
-								<div class="keyword-cell-txt"><span>ZigBee</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/linux.png">
-								<div class="keyword-cell-txt"><span>Linux</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Raspberry-PI.jpg">
-								<div class="keyword-cell-txt"><span>Raspberry PI</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Android-hacking.png">
-								<div class="keyword-cell-txt"><span>Android hacking</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Quadcopter.jpg">
-								<div class="keyword-cell-txt"><span>四軸飛行器</span></div>
-							</li>
-						</ul>
-					</div>
-					<div class="project">
-						<h3>B. 穿戴式應用與定位服務</h3>
-						<ul class="keyword">
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Android-studio.jpg">
-								<div class="keyword-cell-txt"><span>Android studio</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/unity.jpg">
-								<div class="keyword-cell-txt"><span>Unity</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Maya.png">
-								<div class="keyword-cell-txt"><span>Maya</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/ibeacon.jpg">
-								<div class="keyword-cell-txt"><span>iBeacon</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Nq1yBP-8.jpg">
-								<div class="keyword-cell-txt"><span>慣性感測器操作</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/lgwatch.jpg">
-								<div class="keyword-cell-txt"><span>智慧型手錶</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/dims-5-694x431.jpg">
-								<div class="keyword-cell-txt"><span>姿勢分析</span></div>
-							</li>
-						</ul>
-					</div>
-					<div class="project">
-						<h3>C. 動態網頁開發與大數據</h3>
-						<ul class="keyword">
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/web-service.jpg">
-								<div class="keyword-cell-txt"><span>Web service</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/Python.jpg">
-								<div class="keyword-cell-txt"><span>Python</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/bootstrap-social.png">
-								<div class="keyword-cell-txt"><span>Bootstrap</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/google-map.jpg">
-								<div class="keyword-cell-txt"><span>Google map</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/seo.jpg">
-								<div class="keyword-cell-txt"><span>SEO</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/spider.jpg">
-								<div class="keyword-cell-txt"><span>網路爬蟲</span></div>
-							</li>
-							<li class="keyword-cell">
-								<img class="keyword-cell-img" src="images/data.jpg">
-								<div class="keyword-cell-txt"><span>數據分析</span></div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-		</article>
-		<footer id="footer" v-html="footer"></footer>
-	</div>
-	<script src="../js/index.vue.js"></script>
+<div id="main">
+    <div id="wsite">
+        <a href="../index.html"><img id="Logo" src="../source/unnamed.jpg"/></a>
+    </div>
+    <header id="header" v-html="header"></header>
+    <article id="article">
+        <section>
+            <div class="header">
+                <h1>實驗室介紹</h1>
+            </div>
+        </section>
+        <section>
+            <div class="recruit">
+                <h2>誠徵碩士研究生專題生</h2>
+                <div id="Tab-container">
+                    <span id="tab-1">1</span>
+                    <span id="tab-2">2</span>
+                    <span id="tab-3">3</span>
+                    <span id="tab-4">4</span>
+                    <span id="tab-5">5</span>
+                    <span id="tab-6">6</span>
+                    <div id="tab">
+                        <div class="tab-content-1">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/9mT66Rso6RE"></iframe>
+                        </div>
+                        <div class="tab-content-2">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/wOV7CtfW944"></iframe>
+                        </div>
+                        <div class="tab-content-3">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/0brPJ0tKP6E"></iframe>
+                        </div>
+                        <div class="tab-content-4">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/GCzAALQSRHg"></iframe>
+                        </div>
+                        <div class="tab-content-5">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/e_LchyD73-s"></iframe>
+                        </div>
+                        <div class="tab-content-6">
+                            <iframe allow="accelerometer; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen frameborder="1"
+                                    src="https://www.youtube.com/embed/lcVqd8x1saU"></iframe>
+                        </div>
+                        <ul>
+                            <li><a href="#tab-1">1</a></li>
+                            <li><a href="#tab-2">2</a></li>
+                            <li><a href="#tab-3">3</a></li>
+                            <li><a href="#tab-4">4</a></li>
+                            <li><a href="#tab-5">5</a></li>
+                            <li><a href="#tab-6">6</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="research">
+                <h2>研究領域</h2>
+                <div class="project">
+                    <h3>A. 通訊協定與系統整合</h3>
+                    <ul class="keyword">
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/lte.jpg">
+                            <div class="keyword-cell-txt"><span>LTE</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/wifi-direct.jpg">
+                            <div class="keyword-cell-txt"><span>Wi-Fi direct</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/ZigBee.png">
+                            <div class="keyword-cell-txt"><span>ZigBee</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/linux.png">
+                            <div class="keyword-cell-txt"><span>Linux</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Raspberry-PI.jpg">
+                            <div class="keyword-cell-txt"><span>Raspberry PI</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Android-hacking.png">
+                            <div class="keyword-cell-txt"><span>Android hacking</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Quadcopter.jpg">
+                            <div class="keyword-cell-txt"><span>四軸飛行器</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>B. 穿戴式應用與定位服務</h3>
+                    <ul class="keyword">
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Android-studio.jpg">
+                            <div class="keyword-cell-txt"><span>Android studio</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/unity.jpg">
+                            <div class="keyword-cell-txt"><span>Unity</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Maya.png">
+                            <div class="keyword-cell-txt"><span>Maya</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/ibeacon.jpg">
+                            <div class="keyword-cell-txt"><span>iBeacon</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Nq1yBP-8.jpg">
+                            <div class="keyword-cell-txt"><span>慣性感測器操作</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/lgwatch.jpg">
+                            <div class="keyword-cell-txt"><span>智慧型手錶</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/dims-5-694x431.jpg">
+                            <div class="keyword-cell-txt"><span>姿勢分析</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <h3>C. 動態網頁開發與大數據</h3>
+                    <ul class="keyword">
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/web-service.jpg">
+                            <div class="keyword-cell-txt"><span>Web service</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/Python.jpg">
+                            <div class="keyword-cell-txt"><span>Python</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/bootstrap-social.png">
+                            <div class="keyword-cell-txt"><span>Bootstrap</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/google-map.jpg">
+                            <div class="keyword-cell-txt"><span>Google map</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/seo.jpg">
+                            <div class="keyword-cell-txt"><span>SEO</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/spider.jpg">
+                            <div class="keyword-cell-txt"><span>網路爬蟲</span></div>
+                        </li>
+                        <li class="keyword-cell">
+                            <img class="keyword-cell-img" src="images/data.jpg">
+                            <div class="keyword-cell-txt"><span>數據分析</span></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </article>
+    <footer id="footer" v-html="footer"></footer>
+</div>
+<script src="../js/index.vue.js"></script>
 </body>
 
 </html>

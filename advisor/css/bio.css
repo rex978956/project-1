@@ -1,89 +1,89 @@
 #article {
-	display: flex;
-	/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
-	margin: 1vw;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 3rem;
-	width: 75vw;
+    display: flex;
+    /*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
+    margin: 1vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 75vw;
 }
 
 @media screen and (max-width: 620px) {
-	#article {
-		width: 95vw;
-	}
+    #article {
+        width: 95vw;
+    }
 }
 
 #article .header {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #article .header h1 {
-	border-bottom: solid 2px #1caa5d;
-	margin: 6vh 0 5vh 0;
+    border-bottom: solid 2px #1caa5d;
+    margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
-	margin-top: 6vh;
-	margin-bottom: 3vh;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
 }
 
 #article h3 {
-	margin-top: 4vh;
-	margin-bottom: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 #article h4 {
-	font-size: 25px;
-	margin-top: 4vh;
-	margin-bottom: 2vh;
+    font-size: 25px;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 
 #article .content p {
-	line-height: 4vh;
+    line-height: 4vh;
 }
 
 
 #article .bio,
 #article .awards {
-	padding: 2vh 3vw;
-	box-shadow: 0px 0px 50px 0px #b7b7b7;
-	border-radius: 10px;
-	margin: 0vh 2vw 5vh 6vw;
+    padding: 2vh 3vw;
+    box-shadow: 0px 0px 50px 0px #b7b7b7;
+    border-radius: 10px;
+    margin: 0vh 2vw 5vh 6vw;
 }
 
 #article .bio p {
-	margin-left: 2vw;
+    margin-left: 2vw;
 }
 
 #article .counter {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 
 #article .counter li {
-	counter-increment: step-counter;
-	margin-bottom: 10px;
-	line-height: 4vh;
-	margin-left: 2vw;
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    line-height: 4vh;
+    margin-left: 2vw;
 }
 
 
 #article .counter li::before {
-	content: counter(step-counter);
-	margin-right: 10px;
-	font-size: 80%;
-	background-color: #b5aa90;
-	color: white;
-	font-weight: bold;
-	padding: 3px 8px;
-	border-radius: 3px;
+    content: counter(step-counter);
+    margin-right: 10px;
+    font-size: 80%;
+    background-color: #b5aa90;
+    color: white;
+    font-weight: bold;
+    padding: 3px 8px;
+    border-radius: 3px;
 }
 
 #article .counter span {
-	font-size: 16px;
+    font-size: 16px;
 }

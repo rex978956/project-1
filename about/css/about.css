@@ -1,119 +1,119 @@
 #article {
-	display: flex;
-	margin: 1vw;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 3rem;
-	width: 75vw;
+    display: flex;
+    margin: 1vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 75vw;
 }
 
 @media screen and (max-width: 620px) {
-	#article {
-		width: 95vw;
-	}
+    #article {
+        width: 95vw;
+    }
 }
 
 
 #article .header {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #article .header h1 {
-	border-bottom: solid 2px #1caa5d;
-	margin: 6vh 0 5vh 0;
+    border-bottom: solid 2px #1caa5d;
+    margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
-	margin-top: 6vh;
-	margin-bottom: 3vh;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
 }
 
 #article h3 {
-	margin-top: 4vh;
-	margin-bottom: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 #article .content {
-	width: 90%;
-	margin: 2vh 2vw;
-	display: flex;
-	align-content: center;
-	justify-content: center;
+    width: 90%;
+    margin: 2vh 2vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 #article .member {
-	width: 30%;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	justify-content: center;
-	text-align: center;
-	margin: 0 1vw 2vh 1vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 1vw 2vh 1vw;
 
 }
 
 #article .member > div {
-	margin-bottom: 2vh;
+    margin-bottom: 2vh;
 }
 
 #article .member > table {
-	padding: 2px;
-	border: solid 1px #b7b7b7;
-	border-radius: 10px;
+    padding: 2px;
+    border: solid 1px #b7b7b7;
+    border-radius: 10px;
 }
 
 #article .member > table th {
-	text-align: left;
-	font-size: 20px;
-	padding-bottom: 2vh;
+    text-align: left;
+    font-size: 20px;
+    padding-bottom: 2vh;
 }
 
 #article .member > table td {
-	text-align: center;
+    text-align: center;
 }
 
 #article .github > h2 {
-	text-align: center;
-	border-bottom: solid 2px #222;
+    text-align: center;
+    border-bottom: solid 2px #222;
 }
 
 #article .github > a {
-	color: #222;
+    color: #222;
 }
 
 #article svg {
-	width: 200px;
-	height: 200px;
-	color: #222;
+    width: 200px;
+    height: 200px;
+    color: #222;
 }
 
 #article svg:hover {
-	width: 200px;
-	height: 200px;
-	color: #ab372f;
+    width: 200px;
+    height: 200px;
+    color: #ab372f;
 }
 
 
 @media screen and (max-width: 875px) {
-	#article .content {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    #article .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-	#article .member {
-		width: 80%;
-		display: flex;
-		flex-direction: column;
-		align-content: center;
-		justify-content: center;
-		text-align: center;
-		margin: 0 1vw 2vh 1vw;
+    #article .member {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        margin: 0 1vw 2vh 1vw;
 
-	}
+    }
 
-	#article .member > table th {
-		text-align: center;
-	}
+    #article .member > table th {
+        text-align: center;
+    }
 }

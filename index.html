@@ -2,78 +2,79 @@
 <html lang="zh-Hant-TW">
 
 <head>
-	<meta charset="UTF-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<meta name="author" content="翁新橋 柯秉宏 梁譯升">
-	<meta name="description" content="Teacher website for Pan. In the Porject one class of TKUCSIE 2B.">
-	<link rel="icon" href="./source/favicon.png" type="image/png" />
-	<link rel="shortcut icon" href="./source/favicon.png" type="image/png" />
-	<title>首頁</title>
-	<link href="./css/index.css" rel="stylesheet">
-	<link href="./css/style.css" rel="stylesheet">
-	<script src="./js/vue.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="./js/timetable.js"></script>
-	<script src="./js/index.js"></script>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="翁新橋 柯秉宏 梁譯升" name="author">
+    <meta content="Teacher website for Pan. In the Porject one class of TKUCSIE 2B." name="description">
+    <link href="./source/favicon.png" rel="icon" type="image/png"/>
+    <link href="./source/favicon.png" rel="shortcut icon" type="image/png"/>
+    <title>首頁</title>
+    <link href="./css/index.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <script src="./js/vue.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./js/timetable.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-	<div id="main">
-		<a href="./index.html"><img id="Logo" src="./source/unnamed.jpg"></a>
-		<header id="header" v-html="header_index"></header>
-		<article id="article">
-			<div class="header">
-				<h1>首頁</h1>
-			</div>
-			<section>
-				<div class="intro">
-					<div class="content">
-						<h4>潘孟鉉 Meng-Shiuan Pan</h4>
-						<p>淡江大學 資訊工程系 副教授</p>
-						<p>Associate Professor, Dept. CSIE, Tamkang University </p>
-						<p>研究室: E659</p>
-						<p>電話: 02-2621-5656 分機 3520</p>
-						<p>Email: <a href="mailto:mspan@mail.tku.edu.tw">mspan@mail.tku.edu.tw</a></p>
-					</div>
-					<div class="sticker">
-						<img src="./source/sticker.jpg">
-					</div>
-				</div>
-			</section>
-			<section>
-				<div id="lab">
-					<h2>實驗室</h2>
-					<h3>※誠徵碩士研究生專題生※</h3>
-					<div class="content">
-						<h3>研究領域</h3>
-						<div>
-							<p>A. 通訊協定與系統整合</p>
-							<p>B. 穿戴式應用與定位服務</p>
-							<p>C. 動態網頁開發與大數據</p>
-						</div>
-					</div>
-					<div class="link">
-						<a href="./lab/introduction.html">
-							<span>了解更多</span>
-							<span class="icon">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
-									<path fill="currentColor" d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path>
+<div id="main">
+    <a href="./index.html"><img id="Logo" src="./source/unnamed.jpg"></a>
+    <header id="header" v-html="header_index"></header>
+    <article id="article">
+        <div class="header">
+            <h1>首頁</h1>
+        </div>
+        <section>
+            <div class="intro">
+                <div class="content">
+                    <h4>潘孟鉉 Meng-Shiuan Pan</h4>
+                    <p>淡江大學 資訊工程系 副教授</p>
+                    <p>Associate Professor, Dept. CSIE, Tamkang University </p>
+                    <p>研究室: E659</p>
+                    <p>電話: 02-2621-5656 分機 3520</p>
+                    <p>Email: <a href="mailto:mspan@mail.tku.edu.tw">mspan@mail.tku.edu.tw</a></p>
+                </div>
+                <div class="sticker">
+                    <img src="./source/sticker.jpg">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="lab">
+                <h2>實驗室</h2>
+                <h3>※誠徵碩士研究生專題生※</h3>
+                <div class="content">
+                    <h3>研究領域</h3>
+                    <div>
+                        <p>A. 通訊協定與系統整合</p>
+                        <p>B. 穿戴式應用與定位服務</p>
+                        <p>C. 動態網頁開發與大數據</p>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="./lab/introduction.html">
+                        <span>了解更多</span>
+                        <span class="icon">
+								<svg viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg">
+									<path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"
+                                          fill="currentColor"></path>
 								</svg>
 							</span>
-						</a>
-					</div>
-				</div>
-			</section>
-			<section>
-				<div id="coursesTable">
-					<h2>本學期課表</h2>
-				</div>
-			</section>
-		</article>
-		<footer id="footer" v-html="footer"></footer>
-	</div>
-	<script src="./js/index.vue.js"></script>
-	<script src="./js/index.js"></script>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div id="coursesTable">
+                <h2>本學期課表</h2>
+            </div>
+        </section>
+    </article>
+    <footer id="footer" v-html="footer"></footer>
+</div>
+<script src="./js/index.vue.js"></script>
+<script src="./js/index.js"></script>
 </body>
 
 </html>

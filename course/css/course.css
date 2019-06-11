@@ -1,43 +1,43 @@
 #article {
-	display: flex;
-	/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
-	margin: 1vw;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 3rem;
-	width: 75vw;
+    display: flex;
+    /*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
+    margin: 1vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 75vw;
 }
 
 @media screen and (max-width: 620px) {
-	#article {
-		width: 95vw;
-	}
+    #article {
+        width: 95vw;
+    }
 }
 
 
 #article .header {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 #article .header h1 {
-	border-bottom: solid 2px #1caa5d;
-	margin: 6vh 0 5vh 0;
+    border-bottom: solid 2px #1caa5d;
+    margin: 6vh 0 5vh 0;
 }
 
 #article h2 {
-	margin-top: 6vh;
-	margin-bottom: 3vh;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
 }
 
 #article h3 {
-	margin-top: 4vh;
-	margin-bottom: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
 }
 
 #article .content {
-	width: 90%;
-	margin: 2vh 2vw;
+    width: 90%;
+    margin: 2vh 2vw;
 }
 
 #article .academic_102_1,
@@ -46,9 +46,9 @@
 #article .academic_100_2,
 #article .academic_100_1 {
     padding: 2vh 3vw;
-	box-shadow: 0px 0px 50px 0px #b7b7b7;
-	border-radius: 10px;
-	margin-bottom: 4vh;
+    box-shadow: 0px 0px 50px 0px #b7b7b7;
+    border-radius: 10px;
+    margin-bottom: 4vh;
 }
 
 

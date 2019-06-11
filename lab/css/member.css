@@ -1,17 +1,17 @@
 #article {
-	display: flex;
-	/*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
-	margin: 1vw;
-	align-items: center;
-	flex-direction: column;
-	margin-top: 3rem;
-	width: 75vw;
+    display: flex;
+    /*	box-shadow: 0px 0px 100px 0px #a6a6a6;*/
+    margin: 1vw;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 75vw;
 }
 
 @media screen and (max-width: 620px) {
-	#article {
-		width: 95vw;
-	}
+    #article {
+        width: 95vw;
+    }
 }
 
 #article .header {
@@ -42,9 +42,9 @@
 
 #article .degree {
     padding: 2vh 3vw;
-	box-shadow: 0px 0px 50px 0px #b7b7b7;
-	border-radius: 10px;
-	margin-bottom: 4vh;
+    box-shadow: 0px 0px 50px 0px #b7b7b7;
+    border-radius: 10px;
+    margin-bottom: 4vh;
 }
 
 #article .deglist {
@@ -59,7 +59,7 @@
 
 
 #article .counter li {
-	margin-left: 1vw;
+    margin-left: 1vw;
     counter-increment: step-counter;
     margin-bottom: 10px;
     line-height: 4vh;
